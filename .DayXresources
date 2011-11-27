@@ -1,0 +1,33 @@
+! cursor
+URxvt.cursorColor:  #ffff00
+URxvt.pointerColor: #ffff00
+
+URxvt.foreground:			#FEFEFE
+!URxvt.foreground:			#010101
+URxvt.background:			#010101
+!URxvt.background:			#FEFEFF
+!colors
+!black
+!URxvt.color0:				#262626
+!URxvt.color8:				#1c1c1c
+!red
+!URxvt.color1:				#d70000
+!URxvt.color9:				#d75f00
+!green
+!URxvt.color2:				#5f8700
+!URxvt.color10:				#585858
+!yellow
+!URxvt.color3:				#af8700
+!URxvt.color11:				#626262
+!blue
+!URxvt.color4:				#0087ff
+!URxvt.color12:				#808080
+!magenta
+!URxvt.color5:				#af005f
+!URxvt.color13:				#5f5faf
+!cyan
+!URxvt.color6:				#00afaf
+!URxvt.color14:				#8a8a8a
+!white
+!URxvt.color7:				#e4e4e4
+!URxvt.color15:				#ffffd7

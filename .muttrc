@@ -1,0 +1,86 @@
+set imap_user = "rreedd555@gmail.com"
+set smtp_url = "smtp://rreedd555@smtp.gmail.com:587/"
+set from = "rreedd555@gmail.com"
+set realname = "tknv"
+set folder = "imaps://imap.gmail.com:993"
+set spoolfile = "+INBOX"
+set postponed="+[Google Mail]/Drafts"
+set signature="~/.signature"
+
+# Google contact
+set query_command = "google contacts list --title '(?i).*%s'"
+set quit
+
+set header_cache=~/.mutt/cache/headers
+set message_cachedir=~/.mutt/cache/bodies
+set certificate_file=~/.mutt/certificates
+
+set sort = threads
+set sort_aux = reverse-last-date-received
+set sort_re
+set mailcap_path=~/.mailcap
+
+set editor ="vim"
+# allow mutt to open new imap connection automatically
+# Don't wait
+unset imap_passive
+# keep imap connection alive by polling intermittently (time in seconds)
+set imap_keepalive = 300
+# how often to check for new mail (time in seconds)
+set mail_check = 30
+set timeout = 300
+# Display download progress every 5K
+set net_inc=5
+
+bind editor <space> noop
+macro index in "<change-folder>=INBOX<enter>" "Go to inbox"
+macro index al "<change-folder>=[Google Mail]/All Mail<enter>" "Go to all mail"
+macro index se "<change-folder>=[Google Mail]/Sent Mail<enter>" "Go to Sent Mail"
+macro index im "<change-folder>=[Google Mail]/Important<enter>" "Go to Important Mail"
+macro index ho "<change-folder>=Hold<enter>" "Go to Hold Mail"
+macro index jo "<change-folder>=Job<enter>" "Go to Job Mail"
+macro index ac "<change-folder>=Action<enter>" "Go to Action Mail"
+macro index re "<change-folder>=Respond<enter>" "Go to Respond Mail"
+macro index wa "<change-folder>=Waiting<enter>" "Go to Waiting Mail"
+# macro index df "<change-folder>=[Google Mail]Drafts<enter>" "Go to drafts"
+macro index,pager SP "<save-message>=[Google Mail]/Spam<enter>" "mark message as spam"
+macro index,pager HA "<save-message>=INBOX<enter>" "mark message as ham"
+macro index,pager HO "<save-message>=Hold<enter>" "mark message as Hold"
+macro index,pager AC "<save-message>=Action<enter>" "mark message as Action"
+macro index,pager RE "<save-message>=Respond<enter>" "mark message as Respond"
+macro index,pager WA "<save-message>=Waiting<enter>" "mark message as Waiting"
+macro index,pager SA "<save-message>=Save<enter>" "mark message as Save"
+
+set move = no  #Stop asking to "move read messages to mbox"!
+
+alternative_order text/plain text/html
+auto_view text/html
+macro pager \cb <pipe-entry>'urlview'<enter> 'Follow links with urlview'
+
+# GPG
+source /usr/share/doc/mutt/examples/gpg.rc
+
+# Colors
+#
+color attachment blue          white
+color error      brightwhite   red
+color hdrdefault brightcyan    blue
+color indicator  brightwhite   blue
+color markers    brightcyan    default
+color message    white         default
+color normal     white         default
+color quoted     brightgreen   default
+color search     blue          default
+color signature  green         default
+color status     brightwhite   blue
+color tilde      brightmagenta default
+color tree       white         default
+
+# mailing list
+# I subscribed to linaro
+subscribe linaro-toolchain@lists.linaro.org
+# I know that bugs@lists.example.com is a list, but I didn't subscribe to it
+lists linaro-toolchain@lists.linaro.org
+# Please see my comment at the top of this page about this
+set followup_to
+set honor_followup_to=yes

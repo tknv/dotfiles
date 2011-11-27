@@ -1,0 +1,3 @@
+if [ -f "${HOME}/.xsessionrc-${DESKTOP_SESSION}" ]; then
+    exec ${HOME}/.xsessionrc-${DESKTOP_SESSION} &
+fi

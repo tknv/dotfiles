@@ -1,0 +1,8 @@
+echo -e "\033[2;38;5;44mset android build env\033[30m"
+export CROSS_COMPILE=${HOME}/android/Oxygen/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-
+echo -e "\033[1;38;5;11mCROSS COMPILER PATH =\033[30m \033[1;38;5;41m$CROSS_COMPILE\033[30m "
+export ARCH=arm
+echo -e "\033[1;38;5;11mARCH = \033[30m \033[1;38;5;41m$ARCH \033[30m"
+cd ${HOME}/android
+tput sgr0
+

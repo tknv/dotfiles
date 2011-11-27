@@ -1,0 +1,343 @@
+###############################################################################
+#
+#  MIME types and programs that process those types
+#
+#  Much of this file is generated automatically by the program "update-mime".
+#  Please see the "update-mime" man page for more information.
+#
+#  Users can add their own rules if they wish by creating a ".mailcap"
+#  file in their home directory.  Entries included there will take
+#  precedence over those listed here.
+#
+###############################################################################
+
+
+###############################################################################
+#
+#  User section follows:  Any entries included in this section will take
+#  precedence over those created by "update-mime".  DO NOT CHANGE the
+#  "User Section Begins" and "User Section Ends" lines, or anything outside
+#  of this section!
+#
+
+# ----- User Section Begins ----- #
+# -----  User Section Ends  ----- #
+
+###############################################################################
+
+application/vnd.oasis.opendocument.database; soffice -no-oosplash -base '%s'; edit=soffice -no-oosplash -base '%s'; print=soffice -no-oosplash -base -p '%s'; test=test -n "$DISPLAY"; description="OpenDocument Database"; nametemplate=%s.odb
+application/vnd.oasis.opendocument.chart; soffice -no-oosplash -calc '%s'; edit=soffice -no-oosplash -calc '%s'; print=soffice -no-oosplash -calc -p '%s'; test=test -n "$DISPLAY"; description="OpenDocument Chart"; nametemplate=%s.odc
+application/vnd.oasis.opendocument.spreadsheet; soffice -no-oosplash -calc '%s'; edit=soffice -no-oosplash -calc '%s'; print=soffice -no-oosplash -calc -p '%s'; test=test -n "$DISPLAY"; description="OpenDocument Spreadsheet"; nametemplate=%s.ods
+application/vnd.oasis.opendocument.spreadsheet-template; soffice -no-oosplash -calc '%s'; edit=soffice -no-oosplash -calc '%s'; print=soffice -no-oosplash -calc -p '%s'; test=test -n "$DISPLAY"; description="OpenDocument Spreadsheet Template"; nametemplate=%s.ots
+application/vnd.oasis.opendocument.graphics; soffice -no-oosplash -draw '%s'; edit=soffice -no-oosplash -draw '%s'; print=soffice -no-oosplash -draw -p '%s'; test=test -n "$DISPLAY"; description="OpenDocument Drawing"; nametemplate=%s.odg
+application/vnd.oasis.opendocument.graphics-template; soffice -no-oosplash -draw '%s'; edit=soffice -no-oosplash -draw '%s'; print=soffice -no-oosplash -draw -p '%s'; test=test -n "$DISPLAY"; description="OpenDocument Drawing Template"; nametemplate=%s.otg
+application/vnd.oasis.opendocument.presentation; soffice -no-oosplash -impress '%s'; edit=soffice -no-oosplash -impress '%s'; print=soffice -no-oosplash -impress -p '%s'; test=test -n "$DISPLAY"; description="OpenDocument Presentation"; nametemplate=%s.odp
+application/vnd.oasis.opendocument.presentation-template; soffice -no-oosplash -impress '%s'; edit=soffice -no-oosplash -impress '%s'; print=soffice -no-oosplash -impress -p '%s'; test=test -n "$DISPLAY"; description="OpenDocument Presentation Template"; nametemplate=%s.otp
+application/vnd.oasis.opendocument.formula; soffice -no-oosplash -math '%s'; edit=soffice -no-oosplash -math '%s'; print=soffice -no-oosplash -math -p '%s'; test=test -n "$DISPLAY"; description="OpenDocument Formula"; nametemplate=%s.odf
+application/vnd.oasis.opendocument.text; soffice -no-oosplash -writer '%s'; edit=soffice -no-oosplash -writer '%s'; print=soffice -no-oosplash -writer -p '%s'; test=test -n "$DISPLAY"; description="OpenDocument Text Document"; nametemplate=%s.odt
+application/vnd.oasis.opendocument.text-master; soffice -no-oosplash -global '%s'; edit=soffice -no-oosplash -writer '%s'; print=soffice -no-oosplash -writer -p '%s'; test=test -n "$DISPLAY"; description="OpenDocument Master Document"; nametemplate=%s.odm
+application/vnd.oasis.opendocument.text-template; soffice -no-oosplash -writer '%s'; edit=soffice -no-oosplash -writer '%s'; print=soffice -no-oosplash -writer -p '%s'; test=test -n "$DISPLAY"; description="OpenDocument Text Document Template"; nametemplate=%s.ott
+application/vnd.oasis.opendocument.text-web; soffice -no-oosplash -web '%s'; edit=soffice -no-oosplash -web '%s'; print=soffice -no-oosplash -web -p '%s'; test=test -n "$DISPLAY"; description="OpenDocument HTML Document Template"; nametemplate=%s.oth
+text/plain; less '%s'; needsterminal
+application/vnd.sun.xml.base; soffice -no-oosplash -writer '%s'; edit=soffice -no-oosplash -writer '%s'; description="OpenOffice.org Database"; nametemplate=%s.sdb
+application/vnd.sun.xml.calc; soffice -no-oosplash -calc '%s'; edit=soffice -no-oosplash -calc '%s'; test=test -n "$DISPLAY"; description="OpenOffice.org Spreadsheet"; nametemplate=%s.sxc
+application/vnd.sun.xml.calc.template; soffice -no-oosplash -calc '%s'; edit=soffice -no-oosplash -calc '%s'; test=test -n "$DISPLAY"; description="OpenOffice.org Spreadsheet Template"; nametemplate=%s.stc
+application/vnd.sun.xml.draw; soffice -no-oosplash -draw '%s'; edit=soffice -no-oosplash -draw '%s'; test=test -n "$DISPLAY"; description="OpenOffice.org Drawing"; nametemplate=%s.sxd
+application/vnd.sun.xml.draw.template; soffice -no-oosplash -draw '%s'; edit=soffice -no-oosplash -draw '%s'; test=test -n "$DISPLAY"; description="OpenOffice.org Drawing Template"; nametemplate=%s.std
+application/vnd.sun.xml.impress; soffice -no-oosplash -impress '%s'; edit=soffice -no-oosplash -impress '%s'; test=test -n "$DISPLAY"; description="OpenOffice.org Presentation"; nametemplate=%s.sxi
+application/vnd.sun.xml.impress.template; soffice -no-oosplash -impress '%s'; edit=soffice -no-oosplash -impress '%s'; test=test -n "$DISPLAY"; description="OpenOffice.org Presentation Template"; nametemplate=%s.sti
+application/vnd.sun.xml.math; soffice -no-oosplash -math '%s'; edit=soffice -no-oosplash -math '%s'; test=test -n "$DISPLAY"; description="OpenOffice.org Formula"; nametemplate=%s.sxm
+application/vnd.sun.xml.writer; soffice -no-oosplash -writer '%s'; edit=soffice -no-oosplash -writer '%s'; description="OpenOffice.org Text Document"; nametemplate=%s.sxw
+application/vnd.sun.xml.writer.global; soffice -no-oosplash -global '%s'; edit=soffice -no-oosplash -writer '%s'; description="OpenOffice.org Master Document"; nametemplate=%s.sxg
+application/vnd.sun.xml.writer.template; soffice -no-oosplash -writer '%s'; edit=soffice -no-oosplash -writer '%s'; description="OpenOffice.org Text Document Template"; nametemplate=%s.stw
+image/gif; feh '%s'; test=test -n "$DISPLAY" ; description=GIF Image; nametemplate=%s.gif
+image/jpeg; feh '%s'; test=test -n "$DISPLAY" ; description=JPEG Image; nametemplate=%s.jpeg
+image/png; feh '%s'; test=test -n "$DISPLAY" ; description=PNG Image; nametemplate=%s.png
+image/tiff; feh '%s'; test=test -n "$DISPLAY" ; description=TIFF Image; nametemplate=%s.tiff
+image/x-portable-anymap; feh '%s'; test=test -n "$DISPLAY" ; description=PNM Image; nametemplate=%s.pnm
+image/targa; feh '%s'; test=test -n "$DISPLAY" ; description=TGA Image; nametemplate=%s.tga
+image/x-ms-bmp; feh '%s'; test=test -n "$DISPLAY" ; description=BMP Image; nametemplate=%s.bmp
+image/x-xpixmap; feh '%s'; test=test -n "$DISPLAY" ; description=XPM Image; nametemplate=%s.xpm
+image/pjpeg; feh '%s'; test=test -n "$DISPLAY" ; description=JPEG Image; nametemplate=%s.jpeg
+text/html; /usr/bin/sensible-browser '%s'; description=HTML Text; nametemplate=%s.html
+application/vnd.ms-word; abiword '%s' ; edit=abiword '%s' ; test=test "$DISPLAY" != "" ; nametemplate=%s.doc ; description="Microsoft Word Document" ; priority=2application/wordperfect; abiword '%s' ; edit=abiword '%s' ; test=test "$DISPLAY" != "" ; nametemplate=%s.wpd ; description="Corel WordPerfect Document"
+application/vnd.wordperfect; abiword '%s' ; edit=abiword '%s' ; test=test "$DISPLAY" != "" ; nametemplate=%s.wpd ; description="Corel WordPerfect Document"
+application/pdf; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.pdf
+application/x-pdf; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.pdf
+application/x-bzpdf; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.pdf.bz2
+application/x-gzpdf; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.pdf.gz
+application/postscript; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.ps
+application/x-bzpostscript; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.ps.bz2
+application/x-gzpostscript; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.ps.gz
+image/x-eps; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.eps
+image/x-bzeps; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.eps.bz2
+image/x-gzeps; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.eps.gz
+application/x-dvi; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.dvi
+application/x-gzdvi; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.dvi.gz
+application/x-bzdvi; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.dvi.bz2
+image/vnd.djvu; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.djvu
+image/tiff; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.tiff
+application/x-cbr; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.cbr
+application/x-cbt; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.cbt
+application/x-cbz; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.cbz
+application/x-cb7; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.cb7
+application/vnd.sun.xml.impress; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.sxd
+application/vnd.oasis.opendocument.presentation; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.odp
+application/x-7z-compressed; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-7z-compressed-tar; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-ace; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY" -a -x /usr/bin/unace
+application/x-alz; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY" -a -x /usr/bin/unalz
+application/x-ar; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY" -a -x /usr/bin/ar
+application/x-arj; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-bzip; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-bzip1; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-bzip-compressed-tar; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-bzip1-compressed-tar; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-cabinet; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-cbr; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY" -a -x /usr/bin/unrar -o -x /usr/bin/rar
+application/x-cbz; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-cd-image; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-compress; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-compressed-tar; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-cpio; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY" -a -x /bin/cpio
+application/x-deb; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-ear; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-gtar; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-gzip; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-gzpostscript; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-jar; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY" -a -x /usr/bin/zip -o -x /usr/bin/zip
+application/x-java-archive; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY" -a -x /usr/bin/zip -o -x /usr/bin/zip
+application/x-lha; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY" -a -x /usr/bin/lha
+application/x-lhz; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY" -a -x /usr/bin/lhz
+application/x-lrzip; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY" -a -x /usr/bin/lrzip
+application/x-lrzip-compressed-tar; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY" -a -x /usr/bin/lrzip
+application/x-lzip; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-lzip-compressed-tar; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-lzma; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-lzma-compressed-tar; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-lzop; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY" -a -x /bin/lzop
+application/x-lzop-compressed-tar; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY" -a -x /bin/lzop
+application/x-ms-dos-executable; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-rar; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-rar-compressed; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-rpm; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY" -a -x /usr/bin/rpm
+application/x-rzip; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY" -a -x /usr/bin/rzip
+application/x-stuffit; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-tar; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-tarz; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-war; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-xz; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-xz-compressed-tar; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-zip; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-zip-compressed; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-zoo; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY" -a -x /usr/bin/zoo
+application/zip; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+multipart/x-zip; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+audio/x-musepack; /usr/bin/gnome-mplayer '%s'; description="Musepack Audio"
+application/x-musepack; /usr/bin/gnome-mplayer '%s'; description="Musepack Audio"
+audio/mpc; /usr/bin/gnome-mplayer '%s'; description="Musepack Audio"
+audio/x-mpc; /usr/bin/gnome-mplayer '%s'; description="Musepack Audio"
+audio/musepack; /usr/bin/gnome-mplayer '%s'; description="Musepack Audio"
+application/musepack; /usr/bin/gnome-mplayer '%s'; description="Musepack Audio"
+application/x-ape; /usr/bin/gnome-mplayer '%s'; description="Monkey's Audio"
+audio/ape; /usr/bin/gnome-mplayer '%s'; description="Monkey's Audio"
+audio/x-ape; /usr/bin/gnome-mplayer '%s'; description="Monkey's Audio"
+audio/mpeg2; /usr/bin/gnome-mplayer '%s'; description="MPEG-2 Part 3 Format"
+audio/x-mpeg2; /usr/bin/gnome-mplayer '%s'; description="MPEG-2 Part 3 Format"
+audio/x-mp3; /usr/bin/gnome-mplayer '%s'; description="MPEG-1 Audio Layer 3"
+audio/mp3; /usr/bin/gnome-mplayer '%s'; description="MPEG-1 Audio Layer 3"
+application/x-id3; /usr/bin/gnome-mplayer '%s'; description="MP3 Metadata"
+audio/mpeg; /usr/bin/gnome-mplayer '%s'; description="MPEG Audio Format"
+audio/x-mpeg; /usr/bin/gnome-mplayer '%s'; description="MPEG Audio Format"
+audio/x-mpeg3; /usr/bin/gnome-mplayer '%s'; description="MPEG-3 Audio Format"
+audio/x-mpeg-3; /usr/bin/gnome-mplayer '%s'; description="MPEG-3 Audio Format"
+audio/mpeg3; /usr/bin/gnome-mplayer '%s'; description="MPEG-3 Audio Format"
+audio/mp4; /usr/bin/gnome-mplayer '%s'; description="MPEG-4 Part 3 Format"
+audio/x-m4a; /usr/bin/gnome-mplayer '%s'; description="MPEG-4 Part 3 Format"
+audio/mp; /usr/bin/gnome-mplayer '%s'; description="MP Audio Format"
+audio/x-mp; /usr/bin/gnome-mplayer '%s'; description="MP Audio Format"
+application/ogg; /usr/bin/gnome-mplayer '%s'; description="OggVorbis Audio"
+application/x-ogg; /usr/bin/gnome-mplayer '%s'; description="OggVorbis Audio"
+application/x-vorbis+ogg; /usr/bin/gnome-mplayer '%s'; description="OggVorbis Audio"
+audio/x-vorbis+ogg; /usr/bin/gnome-mplayer '%s'; description="OggVorbis Audio"
+audio/vorbis; /usr/bin/gnome-mplayer '%s'; description="OggVorbis Audio"
+audio/x-vorbis; /usr/bin/gnome-mplayer '%s'; description="OggVorbis Audio"
+audio/ogg; /usr/bin/gnome-mplayer '%s'; description="OggVorbis Audio"
+audio/x-ogg; /usr/bin/gnome-mplayer '%s'; description="OggVorbis Audio"
+audio/x-flac; /usr/bin/gnome-mplayer '%s'; description="Free Lossless Audio Codec"
+application/x-flac; /usr/bin/gnome-mplayer '%s'; description="Free Lossless Audio Codec"
+audio/flac; /usr/bin/gnome-mplayer '%s'; description="Free Lossless Audio Codec"
+audio/x-s3m; /usr/bin/gnome-mplayer '%s'; description="Advanced Module Format"
+audio/x-mod; /usr/bin/gnome-mplayer '%s'; description="Module Format"
+audio/x-xm; /usr/bin/gnome-mplayer '%s'; description="Extended Module Format"
+audio/x-it; /usr/bin/gnome-mplayer '%s'; description="IT Audio Format"
+audio/x-pn-realaudio; /usr/bin/gnome-mplayer '%s'; description="RealAudio Format"
+audio/x-realaudio; /usr/bin/gnome-mplayer '%s'; description="RealAudio Format"
+audio/x-pn-realaudio-plugin; /usr/bin/gnome-mplayer '%s'; description="RealAudio Format"
+audio/x-ms-wmv; /usr/bin/gnome-mplayer '%s'; description="Audio Format"
+audio/x-ms-wax; /usr/bin/gnome-mplayer '%s'; description="Audio Format"
+audio/x-ms-wma; /usr/bin/gnome-mplayer '%s'; description="Audio Format"
+audio/wav; /usr/bin/gnome-mplayer '%s'; description="Waveform Microsoft Wave/RIFF"
+audio/x-wav; /usr/bin/gnome-mplayer '%s'; description="Waveform Microsoft Wave/RIFF"
+audio/x-mpegurl; /usr/bin/gnome-mplayer '%s'; description="Icecast Playlists"
+audio/basic; /usr/bin/gnome-mplayer '%s'; description="Basic Audio Format"
+audio/x-basic; /usr/bin/gnome-mplayer '%s'; description="Basic Audio Format"
+audio/midi; /usr/bin/gnome-mplayer '%s'; description="MIDI Format"
+audio/x-pls; /usr/bin/gnome-mplayer '%s'; description="MP3 ShoutCast/IceCast Playlist"
+audio/x-scpls; /usr/bin/gnome-mplayer '%s'; description="Shoutcast Playlists"
+video/quicktime; /usr/bin/gnome-mplayer '%s'; description="Apple Quicktime Video"; test=test -n "$DISPLAY"
+video/x-quicktime; /usr/bin/gnome-mplayer '%s'; description="Apple Quicktime Video"; test=test -n "$DISPLAY"
+application/x-quicktimeplayer; /usr/bin/gnome-mplayer '%s'; description="Apple Quicktime Video"; test=test -n "$DISPLAY"
+application/smil; /usr/bin/gnome-mplayer '%s'; description="SMIL Format"
+application/vnd.rn-realmedia; /usr/bin/gnome-mplayer '%s'; description="RealAudio Video"; test=test -n "$DISPLAY"
+application/vnd.rn-realaudio; /usr/bin/gnome-mplayer '%s'; description="RealAudio Video"; test=test -n "$DISPLAY"
+video/vnd.rn-realvideo; /usr/bin/gnome-mplayer '%s'; description="RealAudio Video"; test=test -n "$DISPLAY"
+application/asx; /usr/bin/gnome-mplayer '%s'; description="Advanced Systems Format"; test=test -n "$DISPLAY"
+video/x-msvideo; /usr/bin/gnome-mplayer '%s'; description="Audio Video Interleave - Microsoft"; test=test -n "$DISPLAY"
+video/msvideo; /usr/bin/gnome-mplayer '%s'; description="Audio Video Interleave - Microsoft"; test=test -n "$DISPLAY"
+application/x-mplayer2; /usr/bin/gnome-mplayer '%s'; description="Advanced Systems Format"; test=test -n "$DISPLAY"
+application/x-ms-wmv; /usr/bin/gnome-mplayer '%s'; description="Windows Media Video Format"; test=test -n "$DISPLAY"
+video/x-ms-afs; /usr/bin/gnome-mplayer '%s'; description="Audio Video Interleave - Microsoft"; test=test -n "$DISPLAY"
+video/x-ms-asf; /usr/bin/gnome-mplayer '%s'; description="MS ASF video"; test=test -n "$DISPLAY"
+video/x-ms-asf-plugin; /usr/bin/gnome-mplayer '%s'; description="MS ASF video"; test=test -n "$DISPLAY"
+video/x-ms-wm; /usr/bin/gnome-mplayer '%s'; description="Windows Media Format"; test=test -n "$DISPLAY"
+video/x-ms-wmv;  /usr/bin/gnome-mplayer '%s';description="Audio Video Interleave - Microsoft"; test=test -n "$DISPLAY"
+video/x-ms-wma; /usr/bin/gnome-mplayer '%s'; description="Audio Video Interleave - Microsoft"; test=test -n "$DISPLAY"
+video/x-ms-wmx; /usr/bin/gnome-mplayer '%s'; description="Audio Video Interleave - Microsoft"; test=test -n "$DISPLAY"
+video/x-ms-wmp; /usr/bin/gnome-mplayer '%s'; description="Audio Video Interleave - Microsoft"; test=test -n "$DISPLAY"
+video/x-ms-wvx; /usr/bin/gnome-mplayer '%s'; description="Audio Video Interleave - Microsoft"; test=test -n "$DISPLAY"
+application/x-drm-v2; /usr/bin/gnome-mplayer '%s'; description="DRM Version 2 Format"; test=test -n "$DISPLAY"
+video/mpeg; /usr/bin/gnome-mplayer '%s'; description="MPEG Video Format"; test=test -n "$DISPLAY"
+video/x-mpeg; /usr/bin/gnome-mplayer '%s'; description="MPEG Video Format"; test=test -n "$DISPLAY"
+video/x-mpeg2; /usr/bin/gnome-mplayer '%s'; description="MPEG-2 Video"; test=test -n "$DISPLAY"
+video/mp4; /usr/bin/gnome-mplayer '%s'; description="MP4 Format"; test=test -n "$DISPLAY"
+video/3gpp; /usr/bin/gnome-mplayer '%s'; description="3GP Multimedia Format"; test=test -n "$DISPLAY"
+video/fli; /usr/bin/gnome-mplayer '%s'; description="FLI Format"; test=test -n "$DISPLAY"
+video/x-fli; /usr/bin/gnome-mplayer '%s'; description="FLI Format"; test=test -n "$DISPLAY"
+video/x-flv; /usr/bin/gnome-mplayer '%s'; description="Flash Video Format"; test=test -n "$DISPLAY"
+video/vnd.vivo; /usr/bin/gnome-mplayer '%s'; description="VND ViVo Format"; test=test -n "$DISPLAY"
+application/x-nsv-vp3-mp3; /usr/bin/gnome-mplayer '%s'; description="NSP-VP3-MP3"; test=test -n "$DISPLAY"
+video/x-matroska; /usr/bin/gnome-mplayer '%s'; description="Matroska Format"; test=test -n "$DISPLAY"
+video/matroska; /usr/bin/gnome-mplayer '%s'; description="Matroska Format"; test=test -n "$DISPLAY"
+video/x-mng; /usr/bin/gnome-mplayer '%s'; description="Multiple-image Network Graphics Format"; test=test -n "$DISPLAY"
+application/x-gnumeric; gnumeric '%s'; edit=gnumeric '%s'; compose=gnumeric '%s'; description="Gnumeric spreadsheet"; test=test -n "$DISPLAY"; nametemplate=%s.gnumeric
+text/csv; gnumeric '%s'; edit=gnumeric '%s'; description="Comma Separated Values"; test=test -n "$DISPLAY"; nametemplate=%s.csv
+application/vnd.ms-excel; gnumeric '%s'; edit=gnumeric '%s'; description="MS Excel spreadsheet"; test=test -n "$DISPLAY"; nametemplate=%s.xls
+application/x-excel; gnumeric '%s'; edit=gnumeric '%s'; description="MS Excel spreadsheet"; test=test -n "$DISPLAY"; nametemplate=%s.xls
+application/x-ms-excel; gnumeric '%s'; edit=gnumeric '%s'; description="MS Excel spreadsheet"; test=test -n "$DISPLAY"; nametemplate=%s.xls
+application/x-msexcel; gnumeric '%s'; edit=gnumeric '%s'; description="MS Excel spreadsheet"; test=test -n "$DISPLAY"; nametemplate=%s.xls
+application/x-xls; gnumeric '%s'; edit=gnumeric '%s'; description="MS Excel spreadsheet"; test=test -n "$DISPLAY"; nametemplate=%s.xls
+application/x-dos_ms_excel; gnumeric '%s'; edit=gnumeric '%s'; description="MS Excel spreadsheet"; test=test -n "$DISPLAY"; nametemplate=%s.xls
+zz-application/zz-winassoc-xls; gnumeric '%s'; edit=gnumeric '%s'; description="MS Excel spreadsheet"; test=test -n "$DISPLAY"; nametemplate=%s.xls
+application/vnd.sun.xml.calc; gnumeric '%s'; edit=gnumeric '%s'; description="OpenOffice.org Calc spreadsheet"; test=test -n "$DISPLAY"; nametemplate=%s.sxc
+application/vnd.sun.xml.calc.template; gnumeric '%s'; edit=gnumeric '%s'; description="OpenOffice.org Calc spreadsheet template"; test=test -n "$DISPLAY"; nametemplate=%s.stc
+application/x-applix; gnumeric '%s'; edit=gnumeric '%s'; description="Applixware Spreadsheets file"; test=test -n "$DISPLAY"; nametemplate=%s.as
+application/x-applix-spreadsheet; gnumeric '%s'; edit=gnumeric '%s'; description="Applixware Spreadsheets file"; test=test -n "$DISPLAY"; nametemplate=%s.as
+application/vnd.lotus-1-2-3; gnumeric '%s'; edit=gnumeric '%s'; description="Lotus 1-2-3 spreadsheet"; test=test -n "$DISPLAY"; nametemplate=%s.xls
+application/x-123; gnumeric '%s'; edit=gnumeric '%s'; description="Lotus 1-2-3 spreadsheet"; test=test -n "$DISPLAY"; nametemplate=%s.xls
+text/tab-separated-values; gnumeric '%s'; edit=gnumeric '%s'; description="Tab separated values"; test=test -n "$DISPLAY"; nametemplate=%s.tsv
+application/x-mps; gnumeric '%s'; edit=gnumeric '%s'; description="MPS (Mathematical Programming System) linear programming file"; test=test -n "$DISPLAY"; nametemplate=%s.mps
+application/x-oleo; gnumeric '%s'; edit=gnumeric '%s'; description="GNU Oleo spreadsheet"; test=test -n "$DISPLAY"; nametemplate=%s.oleo
+application/x-planperfect; gnumeric '%s'; edit=gnumeric '%s'; description="PlanPerfect spreadsheet"; test=test -n "$DISPLAY"; nametemplate=%s.pln
+application/x-quattropro; gnumeric '%s'; edit=gnumeric '%s'; description="Quattro Pro spreadsheet"; test=test -n "$DISPLAY"; nametemplate=%s.wb1
+application/x-sc; gnumeric '%s'; edit=gnumeric '%s'; description="SC/XSpread spreadsheet"; test=test -n "$DISPLAY"; nametemplate=%s.sc
+application/x-sylk; gnumeric '%s'; edit=gnumeric '%s'; description="Multiplan SYLK spreadsheet"; test=test -n "$DISPLAY"; nametemplate=%s.slk
+application/x-xbase; gnumeric '%s'; edit=gnumeric '%s'; description="Xbase spreadsheet"; test=test -n "$DISPLAY"; nametemplate=%s.dbf
+application/x-lpsolve; gnumeric '%s'; edit=gnumeric '%s'; description="LPSolve Linear Program Solver"; test=test -n "$DISPLAY"; nametemplate=%s.lp
+application/x-troff-man; /usr/bin/nroff -mandoc -Tutf8; copiousoutput; print=/usr/bin/nroff -mandoc -Tutf8 | print text/plain:-
+application/x-ogg; /usr/bin/mplayer '%s'; description="OggVorbis Audio"
+application/ogg; /usr/bin/mplayer '%s'; description="OggVorbis Audio"
+audio/mpeg; /usr/bin/mplayer '%s'; description="MPEG Audio Format"
+audio/x-mpegurl; /usr/bin/mplayer '%s'; description="Icecast Playlists"
+audio/x-ms-wax; /usr/bin/mplayer '%s'; description="Audio Format"
+audio/x-ms-wma; /usr/bin/mplayer '%s'; description="Audio Format"
+audio/x-pls; /usr/bin/mplayer '%s'; description="MP3 ShoutCast/IceCast Playlist"
+audio/x-scpls; /usr/bin/mplayer '%s'; description="Shoutcast Playlists"
+audio/x-wav; /usr/bin/mplayer '%s'; description="Waveform Microsoft Wave/RIFF"
+video/mpeg; /usr/bin/mplayer '%s'; description="MPEG Video Format"; test=test -n "$DISPLAY"
+video/quicktime; /usr/bin/mplayer '%s'; description="Apple Quicktime Video"; test=test -n "$DISPLAY"
+video/x-mpeg2; /usr/bin/mplayer '%s'; description="MPEG Video"; test=test -n "$DISPLAY"
+video/x-mpeg; /usr/bin/mplayer '%s'; description="MPEG 2 Video"; test=test -n "$DISPLAY"
+video/mpeg; /usr/bin/mplayer '%s'; description="MPEG 2 Video"; test=test -n "$DISPLAY"
+video/x-ms-afs; /usr/bin/mplayer '%s'; description="Audio Video Interleave - Microsoft"; test=test -n "$DISPLAY"
+video/x-ms-asf; /usr/bin/mplayer '%s'; description="MS ASF video"; test=test -n "$DISPLAY"
+video/x-msvideo; /usr/bin/mplayer '%s'; description="Audio Video Interleave - Microsoft"; test=test -n "$DISPLAY"
+video/x-ms-wma; /usr/bin/mplayer '%s'; description="Audio Video Interleave - Microsoft"; test=test -n "$DISPLAY"
+video/x-ms-wmv; /usr/bin/mplayer '%s'; description="Audio Video Interleave - Microsoft"; test=test -n "$DISPLAY"
+video/x-ms-wmx; /usr/bin/mplayer '%s'; description="Audio Video Interleave - Microsoft"; test=test -n "$DISPLAY"
+video/x-ms-wvx; /usr/bin/mplayer '%s'; description="Audio Video Interleave - Microsoft"; test=test -n "$DISPLAY"
+message/rfc822; mutt -Rf '%s'; edit=mutt -f '%s'; needsterminal
+application/x-java-jnlp-file; /usr/lib/jvm/java-6-sun-1.6.0.26/jre/javaws/javaws '%s'
+application/x-tar; /bin/tar tvf -; print=/bin/tar tvf - | print text/plain:-; copiousoutput
+application/x-gtar; /bin/tar tvzf -; print=/bin/tar tvzf - | print text/plain:-; copiousoutput
+application/x-bittorrent; transmission-gtk '%s'; description="GTK-based BitTorrent client"; test=test -n "$DISPLAY"
+application/zip; unzip -l '%s'; nametemplate=%s.zip; copiousoutput
+text/plain; more '%s'; needsterminal
+image/gif  ; /usr/bin/xloadimage '%s' ; test=test -n "$DISPLAY"
+image/jpeg ; /usr/bin/xloadimage '%s' ; test=test -n "$DISPLAY"
+image/png  ; /usr/bin/xloadimage '%s' ; test=test -n "$DISPLAY"
+image/tiff ; /usr/bin/xloadimage '%s' ; test=test -n "$DISPLAY"
+image/x-cmu-raster; /usr/bin/xloadimage '%s' ; test=test -n "$DISPLAY"
+image/x-portable-anymap; /usr/bin/xloadimage '%s' ; test=test -n "$DISPLAY"
+image/x-portable-bitmap; /usr/bin/xloadimage '%s' ; test=test -n "$DISPLAY"
+image/x-portable-graymap; /usr/bin/xloadimage '%s' ; test=test -n "$DISPLAY"
+image/x-portable-pixmap; /usr/bin/xloadimage '%s' ; test=test -n "$DISPLAY"
+image/x-xbitmap ; /usr/bin/xloadimage '%s' ; test=test -n "$DISPLAY"
+image/x-xpixmap ; /usr/bin/xloadimage '%s' ; test=test -n "$DISPLAY"
+image/x-xwindowdump ; /usr/bin/xloadimage '%s' ; test=test -n "$DISPLAY"
+image/*; evince '%s'; test=test -n "$DISPLAY"; nametemplate=%s.dummy
+text/plain; view '%s'; edit=vim '%s'; compose=vim '%s'; needsterminal
+text/csv; soffice -no-oosplash -calc '%s'; edit=soffice -no-oosplash -calc '%s'; test=test -n "$DISPLAY"; description="CSV Document"; nametemplate=%s.csv
+text/spreadsheet; soffice -no-oosplash -calc '%s'; edit=soffice -no-oosplash -calc '%s'; test=test -n "$DISPLAY"; description="Spreadsheet Interchange Document"; nametemplate=%s.slk
+application/x-quattropro; soffice -no-oosplash -calc '%s'; edit=soffice -no-oosplash -calc '%s'; test=test -n "$DISPLAY"; description="Quattro Pro 6 for Windows Spreadsheet"; nametemplate=%s.wb2
+application/x-dbf; soffice -no-oosplash -calc '%s'; edit=soffice -no-oosplash -calc '%s'; test=test -n "$DISPLAY"; description="xBase Document"; nametemplate=%s.dbf
+application/vnd.ms-excel.sheet.macroEnabled.12; soffice -no-oosplash -calc '%s'; edit=soffice -no-oosplash -calc '%s'; test=test -n "$DISPLAY"; description="Office Open XML Spreadsheet with Macros Enabled"; nametemplate=%s.xlsm
+application/vnd.ms-excel.template.macroEnabled.12; soffice -no-oosplash -calc '%s'; edit=soffice -no-oosplash -calc '%s'; test=test -n "$DISPLAY"; description="Office Open XML Spreadsheet Template with Macros Enabled"; nametemplate=%s.xltm
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet; soffice -no-oosplash -calc '%s'; edit=soffice -no-oosplash -calc '%s'; test=test -n "$DISPLAY"; description="Office Open XML Spreadsheet"; nametemplate=%s.xlsx
+application/vnd.openxmlformats-officedocument.spreadsheetml.template; soffice -no-oosplash -calc '%s'; edit=soffice -no-oosplash -calc '%s'; test=test -n "$DISPLAY"; description="Office Open XML Spreadsheet Template"; nametemplate=%s.xltx
+application/vnd.lotus-1-2-3; soffice -no-oosplash -calc '%s'; edit=soffice -no-oosplash -calc '%s'; test=test -n "$DISPLAY"; description="Lotus 1-2-3 spreadsheet"; nametemplate=%s.123
+application/vnd.ms-excel; soffice -no-oosplash -calc '%s'; edit=soffice -no-oosplash -calc '%s'; test=test -n "$DISPLAY"; description="Microsoft Excel Document"; nametemplate=%s.xls
+application/vnd.ms-powerpoint.presentation.macroEnabled.12; soffice -no-oosplash -impress '%s'; edit=soffice -no-oosplash -impress '%s'; test=test -n "$DISPLAY"; description="Office Open XML Presentation with Macros Enabled"; nametemplate=%s.pptm
+application/vnd.ms-powerpoint.slideshow.macroEnabled.12; soffice -no-oosplash -impress '%s'; edit=soffice -no-oosplash -impress '%s'; test=test -n "$DISPLAY"; description="Office Open XML Presentation Slide Show with Macros Enabled"; nametemplate=%s.ppsm
+application/vnd.ms-powerpoint.template.macroEnabled.12; soffice -no-oosplash -impress '%s'; edit=soffice -no-oosplash -impress '%s'; test=test -n "$DISPLAY"; description="Office Open XML Presentation Template with Macros Enabled"; nametemplate=%s.potm
+application/vnd.openxmlformats-officedocument.presentationml.presentation; soffice -no-oosplash -impress '%s'; edit=soffice -no-oosplash -impress '%s'; test=test -n "$DISPLAY"; description="Office Open XML Presentation"; nametemplate=%s.pptx
+application/vnd.openxmlformats-officedocument.presentationml.slideshow; soffice -no-oosplash -impress '%s'; edit=soffice -no-oosplash -impress '%s'; test=test -n "$DISPLAY"; description="Office Open XML Presentation Slide Show"; nametemplate=%s.ppsx
+application/vnd.openxmlformats-officedocument.presentationml.template; soffice -no-oosplash -impress '%s'; edit=soffice -no-oosplash -impress '%s'; test=test -n "$DISPLAY"; description="Office Open XML Presentation Template"; nametemplate=%s.potx
+application/vnd.ms-powerpoint; soffice -no-oosplash -impress '%s'; edit=soffice -no-oosplash -impress '%s'; test=test -n "$DISPLAY"; description="Microsoft PowerPoint Document"; nametemplate=%s.ppt
+text/mathml; soffice -no-oosplash -math '%s'; edit=soffice -no-oosplash -math '%s'; test=test -n "$DISPLAY"; description="MathML Formula"; nametemplate=%s.mml
+application/rtf; soffice -no-oosplash -writer '%s'; edit=soffice -no-oosplash -writer '%s'; test=test -n "$DISPLAY"; description="Rich Text Format"; nametemplate=%s.rtf
+application/x-extension-txt; soffice -no-oosplash -writer '%s'; edit=soffice -no-oosplash -writer '%s'; test=test -n "$DISPLAY"; description="Plain Text Document"; nametemplate=%s.txt
+application/x-t602; soffice -no-oosplash -writer '%s'; edit=soffice -no-oosplash -writer '%s'; test=test -n "$DISPLAY"; description="T602 Document"; nametemplate=%s.602
+application/vnd.wordperfect; soffice -no-oosplash -writer '%s'; edit=soffice -no-oosplash -writer '%s'; test=test -n "$DISPLAY"; description="WordPerfect Document"; nametemplate=%s.wp
+application/vnd.ms-word.document.macroEnabled.12; soffice -no-oosplash -writer '%s'; edit=soffice -no-oosplash -writer '%s'; test=test -n "$DISPLAY"; description="Office Open XML Document with Macros Enabled"; nametemplate=%s.docm
+application/vnd.ms-word.template.macroEnabled.12; soffice -no-oosplash -writer '%s'; edit=soffice -no-oosplash -writer '%s'; test=test -n "$DISPLAY"; description="Office Open XML Document Template with Macros Enabled"; nametemplate=%s.dotm
+application/vnd.openxmlformats-officedocument.wordprocessingml.document; soffice -no-oosplash -writer '%s'; edit=soffice -no-oosplash -writer '%s'; test=test -n "$DISPLAY"; description="Office Open XML Document"; nametemplate=%s.docx
+application/vnd.openxmlformats-officedocument.wordprocessingml.template; soffice -no-oosplash -writer '%s'; edit=soffice -no-oosplash -writer '%s'; test=test -n "$DISPLAY"; description="Office Open XML Document Template"; nametemplate=%s.dotx
+application/msword; soffice -no-oosplash -writer '%s'; edit=soffice -no-oosplash -writer '%s'; test=test -n "$DISPLAY"; description="Microsoft Word Document"; nametemplate=%s.doc
+application/vnd.ms-works; soffice -no-oosplash -writer '%s'; edit=soffice -no-oosplash -writer '%s'; test=test -n "$DISPLAY"; description="Microsoft Works Document"; nametemplate=%s.wps
+application/docbook+xml; abiword '%s' ; edit=abiword '%s' ; test=test "$DISPLAY" != "" ; description="DocBook XML Document"
+application/msword; abiword '%s' ; edit=abiword '%s' ; test=test "$DISPLAY" != "" ; description="Microsoft Word Document"
+application/rtf; abiword '%s' ; edit=abiword '%s' ; test=test "$DISPLAY" != "" ; description="Rich Text document"
+application/vnd.oasis.opendocument.text; abiword '%s' ; edit=abiword '%s' ; test=test "$DISPLAY" != "" ; description="OASIS Open Document"
+application/vnd.palm; abiword '%s' ; edit=abiword '%s' ; test=test "$DISPLAY" != "" ; description="Palm Database"
+application/vnd.plain; abiword '%s' ; edit=abiword '%s' ; test=test "$DISPLAY" != "" ; description="Plain text"
+application/vnd.stardivision.writer;  abiword '%s' ; edit=abiword '%s' ; test=test "$DISPLAY" != "" ; description="StarOffice Writer document"
+application/vnd.sun.xml.writer;   abiword '%s' ; edit=abiword '%s' ; test=test "$DISPLAY" != "" ; description="OpenOffice.org Text document"
+application/wordperfect5.1; abiword '%s' ; edit=abiword '%s' ; test=test "$DISPLAY" != "" ; description="Corel WordPerfect Document"
+application/wordperfect6; abiword '%s' ; edit=abiword '%s' ; test=test "$DISPLAY" != "" ; description="Corel WordPerfect Document"
+application/x-abiword; abiword '%s' ; edit=abiword '%s' ; test=test "$DISPLAY" != "" ; description="AbiWord Document"
+application/x-abicollab; abiword '%s' ; edit=abiword '%s' ; test=test "$DISPLAY" != "" ; description="AbiWord Collaborative Document"
+application/x-applix-word; abiword '%s' ; edit=abiword '%s' ; test=test "$DISPLAY" != "" ; description="Applix Word Document"
+application/x-palm-database; abiword '%s' ; edit=abiword '%s' ; test=test "$DISPLAY" != "" ; description="Palm Database"
+text/abiword; abiword '%s' ; edit=abiword '%s' ; test=test "$DISPLAY" != "" ; description="AbiWord Document"
+text/plain; abiword '%s' ; edit=abiword '%s' ; test=test "$DISPLAY" != "" ; description="Text file"
+text/richtext; abiword '%s' ; edit=abiword '%s' ; test=test "$DISPLAY" != "" ; description="Rich Text document"
+text/rtf; abiword '%s' ; edit=abiword '%s' ; test=test "$DISPLAY" != "" ; description="Rich Text document"
+text/vnd.wap.wml; abiword '%s' ; edit=abiword '%s' ; test=test "$DISPLAY" != "" ; description="Wireless Application Protocol WML file"
+text/*; less '%s'; needsterminal
+text/*; view '%s'; edit=vim '%s'; compose=vim '%s'; needsterminal
+text/*; more '%s'; needsterminal
+application/x-debian-package; /usr/lib/mime/debian-view '%s'; needsterminal; description=Debian GNU/Linux Package; nametemplate=%s.deb
+# add by tknv
+text/html;	/usr/bin/w3m %s; nametemplate=%s.html
+text/html;	/usr/bin/w3m -dump %s; nametemplate=%s.html; copiousoutput
