@@ -7,9 +7,8 @@ SIGN_TOOL_DIR=${HOME}/android/AutoSign
 
 echo "BUILD update.zip"
 echo "Should run it in ROM files dir"
-echo -n "Press any key to start..."
+echo -n "Press enter key to start..."
 read a
-clear
 cd /tmp
 rm -rf "$WORK_FOLDER"
 mkdir -p "$WORK_FOLDER"

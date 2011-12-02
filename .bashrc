@@ -2,7 +2,7 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 # set opacity
-transset-df -a 0.75 &>/dev/null # night
+# transset-df -a 0.75 &>/dev/null # night
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
@@ -117,6 +117,8 @@ export PATH=$PATH:$HOME/Scripts
 export EDITOR=vim
 # git flow
 source ~/.git-flow-completion.sh
+# proxy
+export http_proxy="http://127.0.0.1:4444"
 
 # test by tknv
 if [ "$TERM" = "linux" ]; then

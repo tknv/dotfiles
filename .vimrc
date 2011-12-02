@@ -11,10 +11,7 @@ filetype plugin indent on
 
 set t_Co=256
 syntax enable
-" set background=dark
-" set background=light
-" let g:solarized_termcolors=256
-colorschem candy
+colorschem candy-dy
 
 set nocompatible    " use vim defaults
 set hlsearch        " highlight searches
@@ -29,17 +26,20 @@ set statusline=%<%f\ %m\ %r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=\ (%v
 
 filetype plugin on
 filetype indent on
+set autoindent
+set smartindent
 set shellslash
 set grepprg=grep\ -nH\ $*
 
 " command for latex compile
-let g:Tex_CompileRule_dvi = '/home/tknv/share/applications/bin/Suplatex $*'
-let g:Tex_BibtexFlavor = 'ujbibtex'
-let g:Tex_CompileRule_pdf = 'dvipdfmx $*.dvi'
+let g:Tex_CompileRule_dvi = 'xelatex --interaction=nonstopmode $*'
+let g:Tex_BibtexFlavor = 'jbibtex'
+" let g:Tex_CompileRule_pdf = 'dvipdfmx $*.dvi'
+let g:Tex_CompileRule_pdf = 'xelatex --interaction=nonstopmode $*'
 
 " file viewer
 let g:Tex_ViewRule_dvi = 'xdvi'
-let g:Tex_ViewRule_pdf = 'evince'
+let g:Tex_ViewRule_pdf = 'apvlv'
 let g:tex_flavor='latex'
 
 " apsell
@@ -101,9 +101,16 @@ autocmd BufRead,BufNew :call UMiniBufExplorer
 "
 map <leader>u :TMiniBufExplorer<cr>
 " Use the arrows to something usefull
-map <right> :bn<cr>
-map <left> :bp<cr>
-
+" <ESC> is-a Meta(Alt),it is strange,but so.
+map <ESC>l :bn<cr>
+map <ESC><right> :bn<cr>
+map <ESC>h :bp<cr>
+map <ESC><left> :bp<cr>
+" Smart way to move btw. windows
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
 " Highlighting: Setup some nice colours to show the mark positions.
 hi default ShowMarksHLl ctermfg=253 ctermbg=None cterm=bold
 hi default ShowMarksHLu ctermfg=253 ctermbg=None cterm=bold

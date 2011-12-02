@@ -88,7 +88,7 @@ auto_save_setup_panels=1
 
 [Layout]
 equal_split=1
-first_panel_size=85
+first_panel_size=42
 message_visible=1
 keybar_visible=1
 xterm_title=1
@@ -119,6 +119,8 @@ screen=
 screen-256color=
 
 rxvt-unicode=
+
+rxvt-unicode-256color=
 
 [Panelize]
 Find *.orig after patching=find . -name \\*.orig -print
