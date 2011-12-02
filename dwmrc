@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+#this file is called by .xinitrc to start some nice apps for dwm
+feh --bg-scale /home/tknv/Pictures/pics/NRAHARA-highres.jpg
+urxvtd -q -f -o
+
+xrdb -load /home/tknv/.Xresources &
+xfce4-power-manager &
+
+#ibus
+export XMODIFIERS="@im=ibus"
+export GTK_TM_MODULE="ibus"
+export GT_IM_MODULE="ibus"
+ibus-daemon -x -r -d &
+
+env - LANG="$LANG" /home/tknv/.dropbox-dist/dropboxd &
+tomboy &
+conky -c /home/tknv/.conky/dwm-conky | while read -r; do xsetroot -name "$REPLY"; done &
+/usr/share/android-notifier-desktop/run.sh &
+while true; do
+	dwm || exit
+done
