@@ -1,2 +1,2 @@
 #!/bin/sh
-sudo pon iiga logfd 2 nodetach debug dump
+sudo pon $1 logfd 2 nodetach debug dump
