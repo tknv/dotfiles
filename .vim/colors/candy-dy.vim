@@ -27,12 +27,12 @@ hi MoreMsg      gui=BOLD guifg=#00ffff guibg=#008070
 hi Question     gui=BOLD guifg=#e8e800 guibg=NONE
 
 " Split area
-hi StatusLine   gui=NONE guifg=#000000 guibg=#c8c8d8
-hi StatusLineNC gui=NONE guifg=#707080 guibg=#c8c8d8
-hi VertSplit    gui=NONE guifg=#606080 guibg=#c8c8d8
+hi StatusLine   gui=NONE guifg=#000000 guibg=NONE "#c8c8d8
+hi StatusLineNC gui=NONE guifg=#707080 guibg=NONE "#c8c8d8
+hi VertSplit    gui=NONE guifg=#606080 guibg=NONE "#c8c8d8
 hi WildMenu     gui=NONE guifg=#000000 guibg=#a0a0ff
 
-" Diff
+" Diff 
 hi DiffText     gui=NONE guifg=#ff78f0 guibg=#a02860
 hi DiffChange   gui=NONE guifg=#e03870 guibg=#601830
 hi DiffDelete   gui=NONE guifg=#a0d0ff guibg=#0020a0
@@ -76,4 +76,4 @@ hi htmlBoldUnderline        gui=BOLD,UNDERLINE
 hi htmlBoldUnderlineItalic  gui=BOLD,UNDERLINE,ITALIC
 hi htmlItalic               gui=ITALIC
 hi htmlUnderline            gui=UNDERLINE
-hi htmlUnderlineItalic      gui=UNDERLINE,ITALIC
+hi htmlUnderlineItalic     gui=UNDERLINE,ITALIC
