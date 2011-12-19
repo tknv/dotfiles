@@ -10,8 +10,8 @@ URxvt.geometry: 90x30
 ! input method
 URxvt.inputMethod: ibus
 ! fonts
-!URxvt*font: xft:Terminus:pixelsize=8
-URxvt.font:-*-Terminus-medium-*-*-*-12-*-*-*-*-*-*-r
+URxvt*font: xft:Terminus:pixelsize=10
+!URxvt.font:-*-Terminus-medium-*-*-*-12-*-*-*-*-*-*-r
 Xft*antialias: true
 Xft*dpi: 96
 
@@ -32,6 +32,9 @@ URxvt.matcher.launcher: url-urxvt.sh
 URxvt.cursorColor: #ffff00
 URxvt.pointerColor: #ffffff
 
-! URxvt.transparent: true
+URxvt.transparent: true
 URxvt.transparentTabbar: true
+
+! term color
+URxvt.foreground: #ffffff
 
