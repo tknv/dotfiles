@@ -58,7 +58,8 @@ auto_view text/html
 macro pager \cb <pipe-entry>'urlview'<enter> 'Follow links with urlview'
 
 # GPG
-source /usr/share/doc/mutt/examples/gpg.rc
+# source /usr/share/doc/mutt/examples/gpg.rc
+source /etc/Muttrc.gpg.dist
 
 # Colors
 #
