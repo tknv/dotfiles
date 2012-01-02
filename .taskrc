@@ -14,15 +14,7 @@ shadow.file=/tmp/shadow.txt
 # Files
 data.location=/home/tknv/.task
 
-# Color theme (uncomment one to use)
-#include /usr/local/share/doc/task/rc/light-16.theme
-include /usr/local/share/doc/task/rc/light-256.theme
-#include /usr/local/share/doc/task/rc/dark-16.theme
-#include /usr/local/share/doc/task/rc/dark-256.theme
-#include /usr/local/share/doc/task/rc/dark-red-256.theme
-#include /usr/local/share/doc/task/rc/dark-green-256.theme
-#include /usr/local/share/doc/task/rc/dark-blue-256.theme
-#include /usr/local/share/doc/task/rc/dark-violets-256.theme
-#include /usr/local/share/doc/task/rc/dark-yellow-green.theme
+include /home/tknv/.task_color
+include /home/tknv/work/public/task-2.0.0.beta4/doc/rc/holidays.jp-JP.rc
 
 rc._forcecolor=yes
