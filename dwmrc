@@ -1,21 +1,30 @@
 #!/usr/bin/env bash
-#this file is called by .xinitrc to start some nice apps for dwm
+# this file is called by .xinitrc to start some nice apps for dwm
 feh --bg-scale $HOME/narahara.png
 urxvtd -q -f -o
 
 xrdb -load $HOME/.Xresources &
-# xfce4-power-manager &
 
-#ibus
+# ibus
 export XMODIFIERS="@im=ibus"
 export GTK_TM_MODULE="ibus"
 export GT_IM_MODULE="ibus"
 ibus-daemon -x -r -d &
 
-#env - LANG="$LANG" /usr/bin/dropboxd &
-#dubs-launch tomboy &
+# daemon applications
+env - LANG="$LANG" /usr/bin/dropboxd &
 conky -c $HOME/.conky | while read -r; do xsetroot -name "$REPLY"; done &
 # /usr/share/android-notifier-desktop/run.sh &
+
+# initialize radio devices, connect wifi AP, config trackpoint
+sudo $HOME/Scripts/du-init
+
+# Start Thinkpad OSD daemon
+if [ -x /usr/bin/tpb ] &&  [ -w /dev/nvram ] && [ -r /dev/nvram ]; then
+	/usr/bin/tpb -d
+fi
+
+# finaly start dwm
 while true; do
 	dwm || exit
 done
