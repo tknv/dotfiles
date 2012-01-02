@@ -65,7 +65,7 @@ source /etc/Muttrc.gpg.dist
 #
 color attachment blue          white
 color error      brightwhite   red
-color hdrdefault brightcyan    blue
+color hdrdefault brightyellow    blue
 color indicator  brightwhite   blue
 color markers    brightcyan    default
 color message    white         default
