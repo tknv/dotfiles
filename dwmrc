@@ -14,7 +14,7 @@ ibus-daemon -x -r -d &
 # daemon applications
 env - LANG="$LANG" /usr/bin/dropboxd &
 conky -c $HOME/.conky | while read -r; do xsetroot -name "$REPLY"; done &
-# /usr/share/android-notifier-desktop/run.sh &
+/usr/share/android-notifier-desktop/run.sh &
 
 # initialize radio devices, connect wifi AP, config trackpoint
 sudo $HOME/Scripts/du-init
