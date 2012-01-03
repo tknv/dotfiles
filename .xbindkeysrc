@@ -1,0 +1,30 @@
+"xbindkeys_show" 
+  control+shift + q
+
+#du setting
+"amixer set Master playback 1+"
+  m:0x0 + c:176
+  XF86AudioRaiseVolume
+
+"amixer set Master playback 1-"
+  m:0x0 + c:174
+  XF86AudioLowerVolume
+
+"amixer set Master toggle"
+  m:0x0 + c:160
+  XF86AudioMute
+
+"sh /home/tknv/Scripts/DualHead.sh"
+  m:0x0 + c:214
+  XF86Display
+
+"sh /home/tknv/Scripts/suspend.sh"
+  m:0x0 + c:223
+  XF86Stanby
+
+"sh /home/tknv/Scripts/hibernate.sh"
+  m:0x0 + c:150
+  XF86Sleep
+
+#FIXME:"clone display"
+  m:0x0 + c:219
