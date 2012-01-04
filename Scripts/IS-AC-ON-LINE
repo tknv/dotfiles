@@ -1,0 +1,8 @@
+#!/bin/sh
+now=`acpi -a | grep on-line | cut -d ' ' -f3`
+sta="on-line"
+if [ "$now" = "$sta" ]; then
+	exit
+else
+	./DANGER-LOW-BATTERY WHEN-LOW-BATTERY-MENU
+fi

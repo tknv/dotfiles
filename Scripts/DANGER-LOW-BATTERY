@@ -1,0 +1,57 @@
+#!/bin/sh
+#
+# (c) 2008 Robert Manea
+#
+# creates dzen menus from 9menu input files
+#
+# * additionaly accepts any dzen formating
+#   commands in the description field
+#
+# * replaces /^.--*/ sequences with graphical 
+#   separator lines
+#
+# Syntax: dz9menu <menufile>
+
+#Position
+X=345
+Y=200
+WIDTH=330
+#Font
+FONT='-*-strong-*-*-*-*-*-*-*-*-*-*'
+# Width of the graphical separator (default 80% of window's width)
+SEPARATOR_WIDTH=`expr $WIDTH - \( $WIDTH / 100 \) \* 20`
+
+[ -f "$1" ] && MENUFILE="$1" || exit
+
+# number of visible menu entries (access the others through scrolling up/down)
+LINES=`wc -l "$MENUFILE"|sed -e 's/ .*//'`
+[ $LINES -gt 20 ] && LINES=20
+
+execute () {
+        read PROG
+
+        while read LINE; do 
+                LBL=;APP=
+                LBL=$(echo $LINE|sed -e 's/:.*$//' -e 's/^[ \t]*//' -e 's/[ \t]*$//')
+                APP=$(echo $LINE|sed -e 's/^.*://' -e 's/^[ \t]*//' -e 's/[ \t]*$//')
+
+                if [ x"$APP" = x"exit" ]; then
+                        exit
+                elif [ x"$LBL" = x"$PROG" ]; then
+                       if [ x"$APP" = x"" ]; then
+                          $LBL&
+                       else
+                          $APP&
+                       fi
+                       exit
+                fi
+        done < "$MENUFILE"
+}
+
+
+(
+echo "^bg(yellow)^fg(red)   $0   "
+sed -e 's/:.*$//' \
+    -e 's/^.--*/^r('${SEPARATOR_WIDTH}'x1)/' "$MENUFILE" 
+) | \
+dzen2 -fg "red" -bg "yellow" -l $LINES -w $WIDTH -x $X -y $Y -fn $FONT -p -m -sa c -e 'onstart=uncollapse,scrollhome;button1=menuprint_noparse,exit;button3=exit;button4=scrollup;button5=scrolldown' | execute

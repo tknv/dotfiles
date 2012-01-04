@@ -1,0 +1,8 @@
+----------
+^fg(blue)^bg(white)Use AC (it is best)        :IS-AC-ON-LINE
+----------
+^bg(white)^fg(blue)Hibernate ^fg(green)(ok but not best)       :hibernate.sh
+----------
+Shutdown now! (may lost data)    :shutdown-du
+----------
+Close (ignore this alert)        :exit
