@@ -4,5 +4,5 @@ sta="on-line"
 if [ "$now" = "$sta" ]; then
 	exit
 else
-	./DANGER-LOW-BATTERY WHEN-LOW-BATTERY-MENU
+	~/Scripts/DANGER-LOW-BATTERY ~/Scripts/WHEN-LOW-BATTERY-MENU
 fi

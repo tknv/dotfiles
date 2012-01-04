@@ -13,7 +13,7 @@ ibus-daemon -x -r -d &
 
 # daemon applications
 env - LANG="$LANG" /usr/bin/dropboxd &
-conky -c $HOME/.conky | while read -r; do xsetroot -name "$REPLY"; done &
+conky -c $HOME/.conky | while read -r; do xsetroot -name "$REPLY"; /home/tknv/Scripts/CHECK-LOW-BATTERY; done &
 /usr/share/android-notifier-desktop/run.sh &
 
 # initialize radio devices, connect wifi AP, config trackpoint
