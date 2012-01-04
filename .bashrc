@@ -40,7 +40,7 @@ true
 export PATH=$PATH:/home/tknv/bin
 export PATH=$PATH:/home/tknv/bin/eclipse
 export PATH=$PATH:/home/tknv/Scripts
-export PATH=$PATH:/home/tknv/Scripts/depot_tools
+export PATH=$PATH:/opt/google/depot_tools
 
 # bin home
 export JAVA_HOME=/opt/java/bin
