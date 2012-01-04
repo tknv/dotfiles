@@ -23,7 +23,8 @@ alias v=viewnior
 alias p='ps -eo pid,ruser,cmd| grep -i'
 alias gg='git grep'
 alias G='grep -i'
-alias gcm='git commit'
+alias gmt='git commit'
+alias gad='git add'
 # }}}
 
 export HISTSIZE=40000
