@@ -1,5 +1,6 @@
 export EDITOR="vim"
-export TERM="st"
+# export TERM="st"
+export TERM="rxvt"
 
 LS_COLORS='di=1;93'
 export LS_COLORS
@@ -39,3 +40,6 @@ export PATH=$PATH:/home/tknv/bin
 export PATH=$PATH:/home/tknv/bin/eclipse
 export PATH=$PATH:/home/tknv/Scripts
 export PATH=$PATH:/home/tknv/Scripts/depot_tools
+
+# bin home
+export JAVA_HOME=/opt/java/bin

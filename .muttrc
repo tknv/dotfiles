@@ -7,7 +7,7 @@ set spoolfile = "+INBOX"
 set postponed="+[Google Mail]/Drafts"
 set signature="~/.signature"
 
-# Google contact
+# Google contact ctrl+t
 set query_command = "google contacts list --title '(?i).*%s'"
 set quit
 
