@@ -6,4 +6,4 @@ total_run_times 0
 use_spacer none
 
 TEXT
-$mpd_smart :: c1-${cpu cpu1}% c2-${cpu cpu2}% :: ${acpitemp}c :: Mem-$memperc%($mem) ${if_up ppp0}:: ppp v${downspeed ppp0} ^${upspeed ppp0} ${endif}${if_up eth0}:: eth v${downspeedf eth0} ^${upspeedf eth0} ${endif}${if_up wlan0}:: wla v${downspeed wlan0} ^${upspeed wlan0} ${endif}:: bt${battery_percent BAT0}%(${battery_short}) :: ${time %a %b %d %I:%M%P}
+$mpd_smart :: c1-${cpu cpu1}% c2-${cpu cpu2}% :: ${acpitemp}c :: Mem-$memperc%($mem) ${if_up ppp0}:: ppp v${downspeed ppp0} ^${upspeed ppp0} ${endif}${if_up eth0}:: eth v${downspeedf eth0} ^${upspeedf eth0} ${endif}${if_up wlan0}:: wla v${downspeed wlan0} ^${upspeed wlan0} ${endif}:: bt${battery_percent BAT0}%(${battery_short})${if_match ${battery_percent BAT0} <= 8}LOW BATERY!${execi 200 st -e ~/Scripts/DANGER-LOW-BATTERY ~/Scripts/WHEN-LOW-BATTERY-MENU &}${endif} :: ${time %a %b %d %I:%M%P}
