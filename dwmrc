@@ -17,12 +17,12 @@ conky -c $HOME/.conky | while read -r; do xsetroot -name "$REPLY"; done &
 /usr/share/android-notifier-desktop/run.sh &
 
 # initialize radio devices, connect wifi AP, config trackpoint
-sudo $HOME/Scripts/du-init
+sudo $HOME/Scripts/du-init &
 
 # Start Thinkpad OSD daemon
-if [ -x /usr/bin/tpb ] &&  [ -w /dev/nvram ] && [ -r /dev/nvram ]; then
-	/usr/bin/tpb -d
-fi
+#if [ -x /usr/bin/tpb ] &&  [ -w /dev/nvram ] && [ -r /dev/nvram ]; then
+#	/usr/bin/tpb -d
+#fi
 
 # finaly start dwm
 while true; do
