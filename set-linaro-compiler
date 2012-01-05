@@ -5,6 +5,6 @@ echo -e "\033[1;38;5;11mCROSS COMPILER PATH =\033[30m \033[1;38;5;41m$CROSS_COMP
 echo -e "\033[1;38;5;11mCFLAGS \033[30m \033[1;38;5;41m$CFLAGS\033[30m "
 export ARCH=arm
 echo -e "\033[1;38;5;11mARCH = \033[30m \033[1;38;5;41m$ARCH \033[30m"
-cd ${HOME}/android
+cd ${HOME}/Work
 tput sgr0
 
