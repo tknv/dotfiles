@@ -4,5 +4,8 @@ sta="on-line"
 if [ "$now" = "$sta" ]; then
 	exit
 else
-	~/Scripts/DANGER-LOW-BATTERY ~/Scripts/WHEN-LOW-BATTERY-MENU
+	bt_level=`cat /home/tknv/.BATTERY_LEVEL_LIM`
+	echo "`expr $bt_level - 20`" > /home/tknv/.BATTERY_LEVEL_LIM
+	echo `cat /home/tknv/.BATTERY_LEVEL_LIM`
 fi
+exit

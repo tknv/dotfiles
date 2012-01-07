@@ -11,6 +11,10 @@ export GTK_TM_MODULE="ibus"
 export GT_IM_MODULE="ibus"
 ibus-daemon -x -r -d &
 
+# set battery alert level
+echo '180' > $HOME/.BATTERY_LEVEL_LIM
+# 180:alert start when less than 18%
+
 # daemon applications
 env - LANG="$LANG" /usr/bin/dropboxd &
 conky -c $HOME/.conky | while read -r; do xsetroot -name "$REPLY"; /home/tknv/Scripts/CHECK-LOW-BATTERY; done &

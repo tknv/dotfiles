@@ -1,15 +1,23 @@
 #!/bin/sh
 btnow=`acpi -b | cut -d , -f2`
 acnow=`acpi -a | grep on-line | cut -d ' ' -f3`
-acsta="on-line"
+aconline="on-line"
 bat=${btnow/%%/0}
 echo "bat = $bat"
+bt_level=`cat /home/tknv/.BATTERY_LEVEL_LIM`
+echo "this is bt min"
+echo $bt_level
 echo $acnow
-echo $acsta
-lim=80
-if [ "$bat" -lt "$lim" -a "$acnow" != "$acsta" ]
+echo $aconline
+limmin=80
+if [ "$bat" -lt "$bt_level" -a "$acnow" != "$aconline" ]
 then
-	/home/tknv/Scripts/DANGER-LOW-BATTERY /home/tknv/Scripts/WHEN-LOW-BATTERY-MENU &
+	if [ "$bat" -lt "$limmin" ]
+	then
+		/home/tknv/Scripts/hibernate.sh
+	else
+		/home/tknv/Scripts/DANGER-LOW-BATTERY /home/tknv/Scripts/WHEN-LOW-BATTERY-MENU
+	fi
 else
 	true
 fi
