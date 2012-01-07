@@ -3,7 +3,7 @@
 # set var
 WORK_FOLDER="build_android_update_zip"
 BUILD_ROM_DIR=$PWD
-SIGN_TOOL_DIR=${HOME}/android/AutoSign
+SIGN_TOOL_DIR=${HOME}/Work/android-tools/AutoSign
 
 echo "BUILD update.zip"
 echo "Should run it in ROM files dir"
@@ -13,7 +13,7 @@ cd /tmp
 rm -rf "$WORK_FOLDER"
 mkdir -p "$WORK_FOLDER"
 cd "$WORK_FOLDER"
-unzip ${HOME}/android/AutoSign/update.zip
+unzip ${HOME}/Work/android-tools/AutoSign/update.zip
 rm system/lib/modules/*
 # cp -a $BUILD_ROM_DIR/modules/*.ko system/lib/modules
 find $BUILD_ROM_DIR/modules -type f -name "*.ko" -print0 -exec cp -p {} ./system/lib/modules/ \; -exec echo " Copy to modules" \;
