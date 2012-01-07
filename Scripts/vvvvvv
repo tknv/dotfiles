@@ -1,0 +1,25 @@
+#!/bin/sh
+
+# Change to game directory
+CANONPATH=`readlink -f "$0"`
+cd "`dirname "$CANONPATH"`"
+
+# Check resource folders exist
+if [ ! -e data ]
+then
+    echo "You are missing games resources `pwd`"
+    echo "Your installation is incomplete!"
+    exit 1
+fi
+
+
+MACHINE=`uname -m`
+if [ "$MACHINE" = x86_64 ]
+then
+    BIN=./VVVVVV_64
+else
+    BIN=./VVVVVV_32
+fi
+
+# Run the game:
+$BIN

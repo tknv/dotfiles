@@ -22,6 +22,10 @@
   m:0x0 + c:223
   XF86Stanby
 
+"chromium"
+  m:0x0 + c:159
+  NoSymbol
+
 # FIXME:"sh /home/tknv/Scripts/hibernate.sh"
   m:0x0 + c:150
   XF86Sleep
