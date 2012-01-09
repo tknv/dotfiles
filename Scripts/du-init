@@ -1,6 +1,6 @@
 #!/bin/sh
 sudo ip link set wlan0 up
-sudo wpa_supplicant -B -Dwext -i wlan0 -c /home/tknv/iNetIDs/KONAO
+sudo wpa_supplicant -B -Dwext -i wlan0 -c /home/tknv/iNetIDs/using
 sudo dhclient wlan0
 
 # Trackpoint setting
