@@ -43,3 +43,8 @@ export PATH=$PATH:/opt/google/depot_tools
 
 # bin home
 export JAVA_HOME=/opt/java/bin
+ 
+# cdargs
+function cv () {
+	cdargs "$1" && cd "`cat "$HOME/.cdargsresult"`" ;
+}
