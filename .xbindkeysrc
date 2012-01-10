@@ -22,6 +22,10 @@
   m:0x0 + c:223
   XF86Stanby
 
+"scrot -t20 -d 1"
+  m:0x0 + c:111
+  Print
+
 "chromium"
   m:0x0 + c:159
   NoSymbol
