@@ -50,7 +50,7 @@ color.sync.rejected=rgb110
 color.undo.before=rgb031
 color.undo.after=rgb053
 
-color.calendar.today=rgb005 on rgb550
+color.calendar.today=rgb000 on rgb550
 color.calendar.due=color0 on rgb430
 color.calendar.due.today=color0 on rgb410
 color.calendar.overdue=color0 on rgb400
