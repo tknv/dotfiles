@@ -17,8 +17,9 @@ alias la='ls -lhA'
 alias a='ls -d .*'
 alias cpptags='ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .'
 alias beep="echo -ne '\a'"
-alias S="screen -S"
+alias S="screen -raAd"
 alias t=task
+alias tcal='task calendar'
 alias v=viewnior
 alias p='ps -eo pid,ruser,cmd| grep -i'
 alias gg='git grep'
