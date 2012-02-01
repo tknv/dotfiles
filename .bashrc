@@ -19,6 +19,7 @@ alias cpptags='ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .'
 alias beep="echo -ne '\a'"
 alias S="screen -raAd"
 alias t=task
+alias tl="task long"
 alias tcal='task calendar'
 alias v=viewnior
 alias p='ps -eo pid,ruser,cmd| grep -i'
