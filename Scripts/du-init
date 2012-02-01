@@ -1,7 +1,7 @@
 #!/bin/sh
-sudo ip link set wlan0 up
-sudo wpa_supplicant -B -Dwext -i wlan0 -c /home/tknv/iNetIDs/using
-sudo dhclient wlan0
+#sudo ip link set wlan0 up
+#sudo wpa_supplicant -B -Dwext -i wlan0 -c /home/tknv/iNetIDs/using
+#sudo dhclient wlan0
 
 # Trackpoint setting
 sudo sh -c 'echo -n 120 > /sys/devices/platform/i8042/serio1/speed'
