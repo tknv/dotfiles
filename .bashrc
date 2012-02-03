@@ -50,3 +50,6 @@ export JAVA_HOME=/opt/java/bin
 function cv () {
 	cdargs "$1" && cd "`cat "$HOME/.cdargsresult"`" ;
 }
+
+#rvm
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
