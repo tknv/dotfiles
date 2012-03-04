@@ -28,6 +28,9 @@ sudo $HOME/Scripts/du-init &
 #	/usr/bin/tpb -d
 #fi
 
+# for (nm-applet) and etc
+exec ck-launch-session dbus-launch &
+
 # finaly start dwm
 while true; do
 	dwm || exit
