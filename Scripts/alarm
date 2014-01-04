@@ -1,0 +1,12 @@
+#!/bin/sh
+while true; do
+time_now=`date +%H`
+if [ "$time_now" = "$1" ]
+then
+    echo "Y"
+    mplayer "$2"
+else
+    echo "`date`"
+    sleep 300
+fi
+done
