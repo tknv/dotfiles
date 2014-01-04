@@ -14,7 +14,7 @@ shadow.file=/tmp/shadow.txt
 # Files
 data.location=/home/tknv/.task
 
-include /home/tknv/.task_color
-include /home/tknv/Work/Public/task-2.0.0.beta4/doc/rc/holidays.jp-JP.rc
+# include /home/tknv/.task_color
+# include /home/tknv/Work/Public/task-2.0.0.beta4/doc/rc/holidays.jp-JP.rc
 
 rc._forcecolor=yes

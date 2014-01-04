@@ -6,14 +6,32 @@
 
 " pathogen
 " call pathogen#infect()
-syntax on
-filetype plugin indent on
+execute pathogen#infect()
+"
+"tknv add for bundle
+"filetype plugin indent on
+set nocompatible    " use vim defaults
+filetype off
 
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+
+" let Vundle manage vundle
+" required!
+"Bundle 'gmarik/vundle'
+"Bundle 'vim-pandoc'
+"Bundle 'vim-markdown'
+
+filetype plugin indent on
+" bundle finish
+
+syntax on
 set t_Co=256
 syntax enable
 colorschem candy-dy
 
-set nocompatible    " use vim defaults
+" set nocompatible    " use vim defaults
 set hlsearch        " highlight searches
 set title           " show title in console title bar
 set incsearch       " do incremental searching
@@ -28,6 +46,9 @@ filetype plugin on
 filetype indent on
 set autoindent
 set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
 set shellslash
 set grepprg=grep\ -nH\ $*
 
@@ -116,3 +137,6 @@ hi default ShowMarksHLl ctermfg=253 ctermbg=None cterm=bold
 hi default ShowMarksHLu ctermfg=253 ctermbg=None cterm=bold
 hi default ShowMarksHLo ctermfg=253 ctermbg=None cterm=bold
 hi default ShowMarksHLm ctermfg=253 ctermbg=None cterm=bold
+" Nerd tree
+autocmd vimenter * if !argc() | NERDTree | endif
+map <C-n> :NERDTreeToggle<CR>

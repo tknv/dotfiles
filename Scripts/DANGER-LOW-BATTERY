@@ -17,7 +17,7 @@ X=345
 Y=200
 WIDTH=330
 #Font
-FONT='-*-strong-*-*-*-*-*-*-*-*-*-*'
+FONT='-*-terminal-*-*-*-*-*-*-*-*-*-*'
 # Width of the graphical separator (default 80% of window's width)
 SEPARATOR_WIDTH=`expr $WIDTH - \( $WIDTH / 100 \) \* 20`
 

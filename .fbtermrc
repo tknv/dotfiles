@@ -6,12 +6,13 @@
 
 # font family names/pixelsize used by fbterm, multiple font family names must be seperated by ','
 # and using a fixed width font as the first is strongly recommended
-font-names=mono
-font-size=10
+font-names=terminus
+font-size=16
 
-# force font width, usually for non-fixed width fonts
+# force font width (and/or height), usually for non-fixed width fonts
 # legal value format: n (fw_new = n), +n (fw_new = fw_old + n), -n (fw_new = fw_old - n)
 #font-width=
+#font-height=
 
 # default color of foreground/background text
 # available colors: 0 = black, 1 = red, 2 = green, 3 = brown, 4 = blue, 5 = magenta, 6 = cyan, 7 = white
@@ -28,7 +29,7 @@ text-encodings=UTF-8
 # cursor shape: 0 = underline, 1 = block
 # cursor flash interval in milliseconds, 0 means disable flashing
 cursor-shape=0
-cursor-interval=500
+cursor-interval=800
 
 # additional ascii chars considered as part of a word while auto-selecting text, except ' ', 0-9, a-z, A-Z
 word-chars=._-
@@ -39,4 +40,5 @@ screen-rotate=0
 
 # specify the favorite input method program to run
 #input-method=fbterm_ucimf
-input-method=yong
+#input-method=yong
+input-method=fcitx-fbterm

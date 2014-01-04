@@ -42,10 +42,17 @@ true
 export PATH=$PATH:/home/tknv/bin
 export PATH=$PATH:/home/tknv/Scripts
 export PATH=$PATH:/opt/google/depot_tools
+export PATH=$PATH:/home/tknv/src/android-SDK/platform-tools
+export PATH=$PATH:/home/tknv/src/GAE188/google_appengine
+
+# GAE SDK PATH
+export APPENGINE_SDK_PATH=/home/tknv/src/GAE188/google_appengine
 
 # bin home
-export JAVA_HOME=/opt/java/bin
- 
+# export JAVA_HOME=/opt/java/bin
+
+# sbin
+export PATH=$PATH:/usr/sbin/
 # cdargs
 function cv () {
 	cdargs "$1" && cd "`cat "$HOME/.cdargsresult"`" ;
@@ -53,3 +60,11 @@ function cv () {
 
 #rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+echo -en "\e]P7ffffff" > /dev/null
+# export PS1="\[\e[1;36m\][\u@\h:\w]\$\[\e[00m\] "
+
+#Git status
+source /home/tknv/src/.bash-git-prompt/gitprompt.sh

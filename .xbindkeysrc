@@ -2,33 +2,30 @@
   control+shift + q
 
 #du setting
-"amixer set Master playback 1+"
-  m:0x0 + c:176
+"amixer set Master 1%+"
   XF86AudioRaiseVolume
 
-"amixer set Master playback 1-"
-  m:0x0 + c:174
+"amixer set Master 1%-"
   XF86AudioLowerVolume
 
 "amixer set Master toggle"
-  m:0x0 + c:160
   XF86AudioMute
 
-"sh /home/tknv/Scripts/DualHead.sh"
+#"sh /home/tknv/Scripts/DualHead.sh"
   m:0x0 + c:214
   XF86Display
 
-"sh /home/tknv/Scripts/suspend.sh"
+#"sh /home/tknv/Scripts/suspend.sh"
   m:0x0 + c:223
   XF86Stanby
 
 "scrot -t20 -d 1"
-  m:0x0 + c:111
   Print
 
 "chromium"
-  m:0x0 + c:159
-  NoSymbol
+XF86HomePage
+# m:0x0 + c:159
+# NoSymbol
 
 # FIXME:"sh /home/tknv/Scripts/hibernate.sh"
   m:0x0 + c:150

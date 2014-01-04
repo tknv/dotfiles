@@ -1,5 +1,7 @@
 set imap_user = "rreedd555@gmail.com"
 set smtp_url = "smtp://rreedd555@smtp.gmail.com:587/"
+set smtp_authenticators = "login"
+# set smtp_url = "smtps://rreedd555@smtp.gmail.com:465/"
 set from = "rreedd555@gmail.com"
 set realname = "tknv"
 set folder = "imaps://imap.gmail.com:993"
@@ -59,7 +61,8 @@ macro pager \cb <pipe-entry>'urlview'<enter> 'Follow links with urlview'
 
 # GPG
 # source /usr/share/doc/mutt/examples/gpg.rc
-source /etc/Muttrc.gpg.dist
+#source /etc/Muttrc.gpg.dist /* archlinux */
+source /etc/Muttrc.d/gpg.rc
 
 # Colors
 #
@@ -79,9 +82,9 @@ color tree       white         default
 
 # mailing list
 # I subscribed to linaro
-subscribe linaro-toolchain@lists.linaro.org
+subscribe dev@suckless.org
 # I know that bugs@lists.example.com is a list, but I didn't subscribe to it
-lists linaro-toolchain@lists.linaro.org
+lists dev@suckless.org
 # Please see my comment at the top of this page about this
 set followup_to
 set honor_followup_to=yes

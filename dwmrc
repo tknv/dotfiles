@@ -1,27 +1,39 @@
 #!/usr/bin/env bash
 # this file is called by .xinitrc to start some nice apps for dwm
-feh --bg-scale $HOME/narahara.png
+feh --bg-scale ~/fb-colorize1001010.png
 urxvtd -q -f -o
 
 xrdb -load $HOME/.Xresources &
 
 # ibus
-export XMODIFIERS="@im=ibus"
-export GTK_TM_MODULE="ibus"
-export GT_IM_MODULE="ibus"
-ibus-daemon -x -r -d &
+# export XMODIFIERS="@im=ibus"
+# export GTK_TM_MODULE="ibus"
+# export GT_IM_MODULE="ibus"
+# ibus-daemon -x -r -d &
+
+# fcitx
+export XMODIFIERS="@im=fcitx"
+export GTK_IM_MODULE="fcitx" # or xim
+export GT_IM_MODULE="fcitx" # or xim
+export QT_IM_MODULE="fcitx" # or xim
+export GTK_PATH=
+fcitx # no need &, it run as daemon
 
 # set battery alert level
 echo '180' > $HOME/.BATTERY_LEVEL_LIM
 # 180:alert start when less than 18%
 
 # daemon applications
-env - LANG="$LANG" /usr/bin/dropboxd &
-conky -c $HOME/.conky | while read -r; do xsetroot -name "$REPLY"; /home/tknv/Scripts/CHECK-LOW-BATTERY; done &
+env - LANG="$LANG" /var/lib/dropbox/.dropbox-dist/dropboxd &
+conky -c $HOME/.conky | while read -r; do xsetroot -name "$REPLY"; done &
+# no BATTERY even note book,,,sad...
+# conky -c $HOME/.conky | while read -r; do xsetroot -name "$REPLY"; /home/tknv/Scripts/CHECK-LOW-BATTERY; done &
 /usr/share/android-notifier-desktop/run.sh &
+/home/tknv/Downloads/copy/x86_64/CopyAgent &
+# java -jar /usr/share/android-notifier-desktop/android-notifier-desktop.jar -t &
 
 # initialize radio devices, connect wifi AP, config trackpoint
-sudo $HOME/Scripts/du-init &
+# sudo $HOME/Scripts/du-init &
 
 # Start Thinkpad OSD daemon
 #if [ -x /usr/bin/tpb ] &&  [ -w /dev/nvram ] && [ -r /dev/nvram ]; then
