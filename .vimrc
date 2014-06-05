@@ -12,6 +12,7 @@ execute pathogen#infect()
 "filetype plugin indent on
 set nocompatible    " use vim defaults
 filetype off
+filetype plugin on
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -140,3 +141,5 @@ hi default ShowMarksHLm ctermfg=253 ctermbg=None cterm=bold
 " Nerd tree
 autocmd vimenter * if !argc() | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
+" instaln markdown
+let g:instant_markdown_slow = 1

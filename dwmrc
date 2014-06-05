@@ -43,6 +43,9 @@ conky -c $HOME/.conky | while read -r; do xsetroot -name "$REPLY"; done &
 # for (nm-applet) and etc
 exec ck-launch-session dbus-launch &
 
+# for cutting blue light
+xflux -l 13.75 -g 100.57
+
 # finaly start dwm
 while true; do
 	dwm || exit

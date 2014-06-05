@@ -1,0 +1,10 @@
+#!/bin/sh
+stable=$1
+last=$2
+new=$3
+git tag v$new
+git archive --format=7z --prefix=Foo-$new/ v$new | 7z a ../Foo-$new.7z
+git diff v$stable v$new | 7z a ../patch-$new.7z
+git log --no-merges v$new ^v$last > ../ChangeLog-$new
+git shortlog --no-merges v$new ^v$last > ../ShortLog
+git diff --stat --summary -M v$last v$new > ../diffstat-$new
