@@ -1,3 +1,1 @@
 browser "bash -c '~/Scripts/url-surf-tabbed.sh %u > /dev/null 2>&1 &'"
-# urls-source "googlereader"
-# googlereader-login "rreedd555@gmail.com"
