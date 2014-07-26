@@ -46,12 +46,14 @@ export PATH=$PATH:/home/tknv/src/android-SDK/android-sdk-linux/tools
 export PATH=$PATH:/home/tknv/src/android-SDK/android-sdk-linux/platform-tools
 export PATH=$PATH:/home/tknv/src/GAE190/google_appengine
 
+export ANDROID_HOME=/home/tknv/src/android-SDK/android-sdk-linux
+
 # GAE SDK PATH
 export APPENGINE_SDK_PATH=/home/tknv/src/GAE190/google_appengine
 
 # bin home
 # export JAVA_HOME=/opt/java/bin
-export PYCHARM_JDK=/opt/java/bin
+export PYCHARM_JDK=/opt/java/sun-java-jre7
 
 # sbin
 export PATH=$PATH:/usr/sbin/
