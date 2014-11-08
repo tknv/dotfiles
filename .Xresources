@@ -25,15 +25,16 @@ URxvt.keysym.F11: perl:fullscreen:switch
 URxvt.keysym.Home: \033[1~
 URxvt.keysym.End: \033[4~
 
-URxvt.perl-ext-common: default,matcher
-!URxvt.urlLauncher: surf
-URxvt.matcher.button: 1
-URxvt.matcher.launcher: url-urxvt.sh
-
-!Copy and Paste
+!Urxvt.perl-ext-common: default,clipboard,url-select,tabbedex,matcher,keyboard-select,font-size
+Urxvt.perl-ext-common: default,clipboad
+!Urxvt.keysym.M-u: perl:url-select:select_next
+!Urxvt.keysym.M-Escape: perl:keyboard-select:activate
+!Urxvt.keysym.M-s: perl:keyboard-select:search
+!Urxvt.url-select.launcher: /usr/bin/xdg-open
+!Urxvt.url-select.underline: true
+!Urxvt.matcher.button: 1
 URxvt.keysym.Shift-Control-V: perl:clipboard:paste
-URxvt.iso14755: false
-URxvt.perl-ext-common: default,clipboard
+URxvt.iso1475: False
 
 ! cursor
 URxvt.cursorColor: #ffff00

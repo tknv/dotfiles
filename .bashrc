@@ -21,6 +21,7 @@ alias S="screen -raAd"
 alias t=task
 alias tl="task long"
 alias tcal='task calendar'
+alias tync='task sync'
 alias v=viewnior
 alias p='ps -eo pid,ruser,cmd| grep -i'
 alias gg='git grep'
@@ -54,6 +55,7 @@ export APPENGINE_SDK_PATH=/home/tknv/src/GAE190/google_appengine
 # bin home
 # export JAVA_HOME=/opt/java/bin
 export PYCHARM_JDK=/opt/java/sun-java-jre7
+export JAVA_HOME=/opt/jdk1.7.0_71
 
 # sbin
 export PATH=$PATH:/usr/sbin/

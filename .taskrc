@@ -18,3 +18,8 @@ data.location=/home/tknv/.task
 # include /home/tknv/Work/Public/task-2.0.0.beta4/doc/rc/holidays.jp-JP.rc
 
 rc._forcecolor=yes
+taskd.certificate=\/home\/tknv\/.task\/rreeddtknv.cert.pem
+taskd.key=\/home\/tknv\/.task\/rreeddtknv.key.pem
+taskd.ca=\/home\/tknv\/.task\/ca.cert.pem
+taskd.server=localhost:53589
+taskd.credentials=rreedd\/tknv\/7fcdd8e2-d2c9-4522-801d-bec71c8e3030
