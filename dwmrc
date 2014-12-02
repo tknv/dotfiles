@@ -19,6 +19,9 @@ export QT_IM_MODULE="fcitx" # or xim
 export GTK_PATH=
 fcitx # no need &, it run as daemon
 
+# config HOME
+export XDG_CONFIG_HOME=$HOME/.config
+
 # set battery alert level
 echo '180' > $HOME/.BATTERY_LEVEL_LIM
 # 180:alert start when less than 18%
@@ -44,10 +47,10 @@ conky -c $HOME/.conky | while read -r; do xsetroot -name "$REPLY"; done &
 exec ck-launch-session dbus-launch &
 
 # start taskd
-export TASKDDATA=/var/taskserver
-/usr/local/bin/taskdctl start
+# export TASKDDATA=/var/taskserver
+# /usr/local/bin/taskdctl start
 # start btsync
-/home/tknv/Scripts/btsync
+# /home/tknv/Scripts/btsync
 # for cutting blue light
 xflux -l 13.75 -g 100.57
 
