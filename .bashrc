@@ -47,7 +47,10 @@ export PATH=$PATH:/home/tknv/src/android-SDK/android-sdk-linux/tools
 export PATH=$PATH:/home/tknv/src/android-SDK/android-sdk-linux/platform-tools
 export PATH=$PATH:/home/tknv/src/GAE190/google_appengine
 
-export ANDROID_HOME=/home/tknv/src/android-SDK/android-sdk-linux
+# src/ansible
+export PATH=$PATH:/home/tknv/src/ansible/bin
+
+export ANDROID_HOME=/home/tknv/src/android-SDK
 
 # GAE SDK PATH
 export APPENGINE_SDK_PATH=/home/tknv/src/GAE190/google_appengine
@@ -55,10 +58,18 @@ export APPENGINE_SDK_PATH=/home/tknv/src/GAE190/google_appengine
 # bin home
 # export JAVA_HOME=/opt/java/bin
 export PYCHARM_JDK=/opt/java/sun-java-jre7
-export JAVA_HOME=/opt/jdk1.7.0_71
+export JAVA_HOME=/opt/jdk1.7.0_75
 
 # sbin
 export PATH=$PATH:/usr/sbin/
+
+# Telegram
+export PATH=$PATH:/home/tknv/src/Telegram
+
+# Qt
+export QTDIR=/home/tknv/Qt5.4.0
+export QMAKESPEC=/home/tknv/Qt5.4.0/5.4/gcc_64/mkspecs/linux-g++-64
+
 # cdargs
 function cv () {
 	cdargs "$1" && cd "`cat "$HOME/.cdargsresult"`" ;

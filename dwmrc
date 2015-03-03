@@ -54,6 +54,9 @@ exec ck-launch-session dbus-launch &
 # for cutting blue light
 xflux -l 13.75 -g 100.57
 
+# mpd user
+# mpd /home/tknv/.config/mpd/mpd.conf
+
 # finaly start dwm
 while true; do
 	dwm || exit
