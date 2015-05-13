@@ -32,7 +32,7 @@ conky -c $HOME/.conky | while read -r; do xsetroot -name "$REPLY"; done &
 # no BATTERY even note book,,,sad...
 # conky -c $HOME/.conky | while read -r; do xsetroot -name "$REPLY"; /home/tknv/Scripts/CHECK-LOW-BATTERY; done &
 /usr/share/android-notifier-desktop/run.sh &
-/home/tknv/Downloads/copy/x86_64/CopyAgent &
+# /home/tknv/Downloads/copy/x86_64/CopyAgent &
 # java -jar /usr/share/android-notifier-desktop/android-notifier-desktop.jar -t &
 
 # initialize radio devices, connect wifi AP, config trackpoint
