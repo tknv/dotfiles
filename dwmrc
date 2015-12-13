@@ -27,14 +27,18 @@ echo '180' > $HOME/.BATTERY_LEVEL_LIM
 # 180:alert start when less than 18%
 
 # daemon applications
-env - LANG="$LANG" /var/lib/dropbox/.dropbox-dist/dropboxd &
+# env - LANG="$LANG" /var/lib/dropbox/.dropbox-dist/dropboxd &
+env - LANG="$LANG" /usr/bin/dropbox start
 conky -c $HOME/.conky | while read -r; do xsetroot -name "$REPLY"; done &
 # no BATTERY even note book,,,sad...
 # conky -c $HOME/.conky | while read -r; do xsetroot -name "$REPLY"; /home/tknv/Scripts/CHECK-LOW-BATTERY; done &
-/usr/share/android-notifier-desktop/run.sh &
-# /home/tknv/Downloads/copy/x86_64/CopyAgent &
+
+# android notification service
+# /usr/share/android-notifier-desktop/run.sh &
+# python /home/tknv/.linconnect/LinConnectServer/main/linconnect_server.py &
 # java -jar /usr/share/android-notifier-desktop/android-notifier-desktop.jar -t &
 
+# /home/tknv/Downloads/copy/x86_64/CopyAgent &
 # initialize radio devices, connect wifi AP, config trackpoint
 # sudo $HOME/Scripts/du-init &
 
@@ -52,7 +56,7 @@ exec ck-launch-session dbus-launch &
 # start btsync
 # /home/tknv/Scripts/btsync
 # for cutting blue light
-xflux -l 13.75 -g 100.57
+# xflux -l 13.75 -g 100.57
 
 # mpd user
 # mpd /home/tknv/.config/mpd/mpd.conf

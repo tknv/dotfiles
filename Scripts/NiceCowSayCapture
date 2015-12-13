@@ -1,0 +1,1 @@
+cat a | cowsay ; scrot -s -d 3 'g.png' ; pngnq g.png ; rm g.png

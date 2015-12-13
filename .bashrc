@@ -43,9 +43,10 @@ true
 export PATH=$PATH:/home/tknv/bin
 export PATH=$PATH:/home/tknv/Scripts
 export PATH=$PATH:/opt/google/depot_tools
-export PATH=$PATH:/home/tknv/src/android-SDK/android-sdk-linux/tools
-export PATH=$PATH:/home/tknv/src/android-SDK/android-sdk-linux/platform-tools
+# export PATH=$PATH:/home/tknv/src/android-SDK/android-sdk-linux/tools
+# export PATH=$PATH:/home/tknv/src/android-SDK/android-sdk-linux/platform-tools
 export PATH=$PATH:/home/tknv/src/GAE190/google_appengine
+export PATH=$PATH:/opt/jre1.8.0_45/bin
 
 # src/ansible
 export PATH=$PATH:/home/tknv/src/ansible/bin
@@ -58,7 +59,8 @@ export APPENGINE_SDK_PATH=/home/tknv/src/GAE190/google_appengine
 # bin home
 # export JAVA_HOME=/opt/java/bin
 export PYCHARM_JDK=/opt/java/sun-java-jre7
-export JAVA_HOME=/opt/jdk1.7.0_75
+# export JAVA_HOME=/opt/jdk1.7.0_75
+export JAVA_HOME=/opt/jre1.8.0_45
 
 # sbin
 export PATH=$PATH:/usr/sbin/
