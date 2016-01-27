@@ -6,4 +6,4 @@ total_run_times 0
 use_spacer none
 
 TEXT
-${scroll 45 $mpd_smart|}::${freq_g}GHz c1-${cpu cpu1}% c2-${cpu cpu2}%::${acpitemp}c::Mem-$memperc%($mem)${if_up usb0}::usb v${downspeed usb0} ^${upspeed usb0}${endif}${if_up ppp0}::pppv${downspeed ppp0} ^${upspeed ppp0}${endif}${if_up wlan0}::wla v${downspeed wlan0} ^${upspeed wlan0}${endif}::${time %a%b%d %H%M}
+${scroll 45 $mpd_smart|}::${freq_g}GHz c1-${cpu cpu1}% c2-${cpu cpu2}%::${acpitemp}c::Mem-$memperc%($mem)${if_up usb0}::usb v${downspeed usb0} ^${upspeed usb0}${endif}${if_up ppp0}::pppv${downspeed ppp0} ^${upspeed ppp0}${endif}${if_up wlp4s0}::wla v${downspeed wlp4s0} ^${upspeed wlp4s0}${endif}::${time %a%b%d %H%M}
