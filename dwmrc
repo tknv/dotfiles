@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # this file is called by .xinitrc to start some nice apps for dwm
 # feh --bg-scale ~/fb-colorize1001010.png
-urxvtd -q -f -o
+# urxvtd -q -f -o
 
 xrdb -load $HOME/.Xresources &
 
@@ -48,7 +48,7 @@ conky -c $HOME/.conky | while read -r; do xsetroot -name "$REPLY"; done &
 #fi
 
 # for (nm-applet) and etc
-exec ck-launch-session dbus-launch &
+# exec ck-launch-session dbus-launch &
 
 # start wicd on tray
 wicd-gtk -t &
