@@ -179,8 +179,8 @@ document.addEventListener( 'keydown', initKeyBind, false );
 function initKeyBind(e){
     var t = e.target;
     if( t.nodeType == 1){
-        addKeyBind( 'C-f', 'hintMode()', e );
-        addKeyBind( 'C-F', 'hintMode(true)', e );
+        addKeyBind( 'C-j', 'hintMode()', e );
+        addKeyBind( 'C-J', 'hintMode(true)', e );
         addKeyBind( 'C-c', 'removeHints()', e );
     }
 }
