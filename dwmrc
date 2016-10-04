@@ -28,7 +28,8 @@ echo '180' > $HOME/.BATTERY_LEVEL_LIM
 
 # daemon applications
 # env - LANG="$LANG" /var/lib/dropbox/.dropbox-dist/dropboxd &
-env - LANG="$LANG" /usr/bin/dropbox start
+# env - LANG="$LANG" /usr/bin/dropbox start
+env - LANG="$LANG" /home/tknv/.dropbox-dist/dropboxd &
 conky -c $HOME/.conky | while read -r; do xsetroot -name "$REPLY"; done &
 # no BATTERY even note book,,,sad...
 # conky -c $HOME/.conky | while read -r; do xsetroot -name "$REPLY"; /home/tknv/Scripts/CHECK-LOW-BATTERY; done &
@@ -48,7 +49,7 @@ conky -c $HOME/.conky | while read -r; do xsetroot -name "$REPLY"; done &
 #fi
 
 # for (nm-applet) and etc
-# exec ck-launch-session dbus-launch &
+exec ck-launch-session dbus-launch &
 
 # start wicd on tray
 wicd-gtk -t &
