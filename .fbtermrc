@@ -20,7 +20,7 @@ color-foreground=7
 color-background=0
 
 # max scroll-back history lines of every window, value must be [0 - 65535], 0 means disable it
-history-lines=1000
+history-lines=60000
 
 # up to 5 additional text encodings, multiple encodings must be seperated by ','
 # run 'iconv --list' to get available encodings.
@@ -41,4 +41,5 @@ screen-rotate=0
 # specify the favorite input method program to run
 #input-method=fbterm_ucimf
 #input-method=yong
-input-method=fcitx-fbterm
+#input-method=fcitx-fbterm
+input-method=ibus-fbterm
