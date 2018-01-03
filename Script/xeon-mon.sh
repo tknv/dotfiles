@@ -1,3 +1,3 @@
 #!/bin/sh
-xrandr --output DP-1 --auto --left-of DVI-I-1
+xrandr --output DP-1 --auto --right-of DVI-I-1
 
