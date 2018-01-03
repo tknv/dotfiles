@@ -86,7 +86,7 @@ set status_chars  = " *%A"
 set status_format = "───[ Folder: %f ]───[%r%m messages%?n? (%n new)?%?d? (%d to delete)?%?t? (%t tagged)? ]───%>─%?p?( %p postponed )?───"
 
 # Sending mail ---------------------------------------
-set from		="wtakanobu@extremenetworks.com"
+set from		="rreedd555@gmail.com"
 set realname		="Takanobu Watanabe"
 set use_from		="yes"
 set envelope_from	="yes"
@@ -114,11 +114,13 @@ set sort_re                                # thread based on regex
 #set reply_regexp = "^(([Rr][Ee]?(\[[0-9]+\])?: *)?(\[[^]]+\] *)?)*"
 
 # Index Key Bindings ---------------------------------
+bind index g noop
 bind index gg       first-entry
 bind index G        last-entry
 bind index R        group-reply
 bind index <space>  collapse-thread
 # toggle flagged messages
+bind index . noop
 macro index .i  "<limit>(~N|~F)<Enter>"  "view new/flag" # .i will show all new/flagged
 macro index .a "<limit>~A<Enter>" "view all" # .a will show all again
 bind index   \t          next-unread
@@ -135,18 +137,18 @@ macro index O "<shell-escape>mbsync extreme<enter>" "run mbsync to sync all mail
 # Saner copy/move dialogs
 macro index,pager C "<copy-message>?<toggle-mailboxes>" "copy a message to a mailbox"
 macro index,pager \em ":set confirmappend=no delete=yes<enter><tag-thread><tag-prefix-cond><save-message>?<toggle-mailboxes>" "move a all thread message to a mailbox"
-macro index,Pager \eCA ":set confirmappend=no delete=yes<enter><tag-thread><tag-prefix-cond><save-message>+extreme/Archive<enter><sync-mailbox>:set confirmappend=yes delete=ask-yes<enter>"  "Archive all in thread"
-macro index,Pager \eca ":set confirmappend=no delete=yes<enter><save-message>+extreme/Archive<enter><sync-mailbox>:set confirmappend=yes delete=ask-yes<enter>" "Archive message"
+macro index,Pager \eR ":set confirmappend=no delete=yes<enter><tag-thread><tag-prefix-cond><save-message>+extreme/Archive<enter><sync-mailbox>:set confirmappend=yes delete=ask-yes<enter>"  "Archive all in thread"
+macro index,Pager \er ":set confirmappend=no delete=yes<enter><save-message>+extreme/Archive<enter><sync-mailbox>:set confirmappend=yes delete=ask-yes<enter>" "Archive message"
 # Filter by hand --------------------------------------
 # move to action
-macro index,Pager \eAC ":set confirmappend=no delete=yes<enter><tag-thread><tag-prefix-cond><save-message>+extreme/Inbox/\.Action<enter><sync-mailbox>:set confirmappend=yes delete=ask-yes<enter>"  "move a all thread message to Action"
-macro index,Pager \eac ":set confirmappend=no delete=yes<enter><save-message>+extreme/Inbox/\.Action<enter><sync-mailbox>:set confirmappend=yes delete=ask-yes<enter>" "move to Action"
+macro index,Pager \eA ":set confirmappend=no delete=yes<enter><tag-thread><tag-prefix-cond><save-message>+extreme/Inbox/\.Action<enter><sync-mailbox>:set confirmappend=yes delete=ask-yes<enter>"  "move a all thread message to Action"
+macro index,Pager \ea ":set confirmappend=no delete=yes<enter><save-message>+extreme/Inbox/\.Action<enter><sync-mailbox>:set confirmappend=yes delete=ask-yes<enter>" "move to Action"
 # move to hold
-macro index,Pager \eHO ":set confirmappend=no delete=yes<enter><tag-thread><tag-prefix-cond><save-message>+extreme/Inbox/\.Hold<enter><sync-mailbox>:set confirmappend=yes delete=ask-yes<enter>"  "move a all thread message to Hold"
-macro index,Pager \eho ":set confirmappend=no delete=yes<enter><save-message>+extreme/Inbox/\.Hold<enter><sync-mailbox>:set confirmappend=yes delete=ask-yes<enter>" "move to Hold"
+macro index,Pager \eH ":set confirmappend=no delete=yes<enter><tag-thread><tag-prefix-cond><save-message>+extreme/Inbox/\.Hold<enter><sync-mailbox>:set confirmappend=yes delete=ask-yes<enter>"  "move a all thread message to Hold"
+macro index,Pager \eh ":set confirmappend=no delete=yes<enter><save-message>+extreme/Inbox/\.Hold<enter><sync-mailbox>:set confirmappend=yes delete=ask-yes<enter>" "move to Hold"
 # move to done
-macro index,Pager \eDO ":set confirmappend=no delete=yes<enter><tag-thread><tag-prefix-cond><save-message>+extreme/Inbox/\.Done<enter><sync-mailbox>:set confirmappend=yes delete=ask-yes<enter>"  "move a all thread message to Done"
-macro index,Pager \edo ":set confirmappend=no delete=yes<enter><save-message>+extreme/Inbox/\.Done<enter><sync-mailbox>:set confirmappend=yes delete=ask-yes<enter>" "move to Done"
+macro index,Pager \eD ":set confirmappend=no delete=yes<enter><tag-thread><tag-prefix-cond><save-message>+extreme/Inbox/\.Done<enter><sync-mailbox>:set confirmappend=yes delete=ask-yes<enter>"  "move a all thread message to Done"
+macro index,Pager \ed ":set confirmappend=no delete=yes<enter><save-message>+extreme/Inbox/\.Done<enter><sync-mailbox>:set confirmappend=yes delete=ask-yes<enter>" "move to Done"
 # to view
 macro index       -   "<limit>all\n" "show all messages (undo limit)"
 macro index       \C_  "<tag-pattern>~N<enter><tag-prefix-cond>N<untag-pattern>~T<enter>" "mark all as read"
@@ -163,6 +165,7 @@ set quote_regexp = "^( {0,4}[>|:#%]| {0,4}[a-z0-9]+[>|]+)+"
 # Pager Key Bindings ---------------------------------
 bind pager k  previous-line
 bind pager j  next-line
+bind pager g noop
 bind pager gg top
 bind pager G  bottom
 bind pager R  group-reply
