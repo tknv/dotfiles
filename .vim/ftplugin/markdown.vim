@@ -1,1 +1,0 @@
-/home/tknv/src/vim-markdown/ftplugin/markdown.vim
