@@ -191,3 +191,5 @@ let g:Tex_CompileRule_dvi = 'uplatex -synctex=1 -interaction=nonstopmode -file-l
 let g:Tex_BibtexFlavor = 'upbibtex'
 let g:Tex_MakeIndexFlavor = 'upmendex $*.idx'
 let g:Tex_UseEditorSettingInDVIViewer = 1
+
+hi Normal guibg=NONE ctermbg=NONE
