@@ -1,2 +1,3 @@
 **/*.swp
 **/*.cache-3
+.muttrc
