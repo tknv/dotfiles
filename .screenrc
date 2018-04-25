@@ -6,3 +6,5 @@ startup_message off
 caption always "%{= kw}%-w%{= bw}%n %t%{-}%+w %-= @%H - %LD %d %LM - %c"
 termcapinfo xterm ti@:te@
 altscreen on
+bindkey -m ' ' eval 'stuff \040' 'writebuf' 'exec sh -c "$HOME/tmp/screen-exchange | clipit"'
+

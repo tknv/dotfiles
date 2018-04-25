@@ -1,3 +1,4 @@
 **/*.swp
 **/*.cache-3
-!/.muttrc
+.muttrc
+Script/pycharm
