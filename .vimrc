@@ -50,6 +50,8 @@
   call dein#add('kshenoy/vim-signature')
 " vim-latex
   call dein#add('vim-latex/vim-latex')
+" vim dracula
+  call dein#add('dracula/vim')
 
   if dein#check_install()
     call dein#install()
@@ -160,7 +162,8 @@ nnoremap <silent> <Space>sp :<C-u>setlocal spell! spelllang=en_gb<CR>:setlocal s
 set copyindent
 
 " color scheme
-colorscheme base16-oceanicnext
+" colorscheme base16-oceanicnext
+color dracula 
 
 " tpope vim-markdown 
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
