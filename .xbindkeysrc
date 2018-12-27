@@ -3,33 +3,73 @@
 
 #du setting
 "amixer set Master 1%+"
+  m:0x0 + c:123
   XF86AudioRaiseVolume
 
 "amixer set Master 1%-"
+  m:0x0 + c:122
   XF86AudioLowerVolume
 
 "amixer set Master toggle"
+  m:0x0 + c:121
   XF86AudioMute
 
-#"sh /home/tknv/Scripts/DualHead.sh"
-  m:0x0 + c:214
+#"mic mute"
+  m:0x0 + c:198
+  XF86AudioMicMute
+ 
+#"mon dim"
+  m:0x0 + c:232
+  XF86MonBrightnessDown
+ 
+#"mon up"
+  m:0x0 + c:233
+  XF86MonBrightnessUp
+
+#"looks cam"
+  m:0x0 + c:235
   XF86Display
 
+#"wlan"
+   m:0x0 + c:246
+   XF86WLAN
+
+#"setting gear icon
+  m:0x0 + c:179
+  XF86Tools
+
+#"search
+  m:0x0 + c:225
+  XF86Search
+
+#"LaunchA
+  m:0x0 + c:128
+  XF86LaunchA
+
+#"Explorer
+  m:0x0 + c:152
+  XF86Explorer
+
 #"sh /home/tknv/Scripts/suspend.sh"
-  m:0x0 + c:223
-  XF86Stanby
+#  m:0x0 + c:223
+#  XF86Stanby
 
 "scrot -t20 -d 1"
+  m:0x0 + c:107
   Print
 
-"chromium"
-XF86HomePage
+"scrot -t20 -s -z -d 1"
+  m:0x1 + c:107
+  Shift + Print
+
+#"chromium"
+#XF86HomePage
 # m:0x0 + c:159
 # NoSymbol
 
 # FIXME:"sh /home/tknv/Scripts/hibernate.sh"
-  m:0x0 + c:150
-  XF86Sleep
+#  m:0x0 + c:150
+#  XF86Sleep
 
 #FIXME:"clone display"
-  m:0x0 + c:219
+#  m:0x0 + c:219

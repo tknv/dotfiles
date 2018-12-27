@@ -11,7 +11,7 @@ URxvt.linespace: 0
 URxvt.inputMethod: ibus
 URxvt.preeditType: OnTheSpot,None
 ! fonts
-URxvt.font: xft:Terminus:size=13,xft:Roboto Mono for Powerline:pixelsize=13
+URxvt.font: xft:Cica:size=12
 !URxvt*font:-*-Terminus-medium-r-*-*-14-*-*-*-*-*-*-*
 !URxvt.font: 8x13
 Xft*antialias: true

@@ -20,16 +20,16 @@ export GTK_PATH=
 fcitx # no need &, it run as daemon
 
 # config HOME
-export XDG_CONFIG_HOME=$HOME/.config
+# export XDG_CONFIG_HOME=$HOME/.config
 
 # set battery alert level
-echo '180' > $HOME/.BATTERY_LEVEL_LIM
+# echo '180' > $HOME/.BATTERY_LEVEL_LIM
 # 180:alert start when less than 18%
 
 # daemon applications
 # env - LANG="$LANG" /var/lib/dropbox/.dropbox-dist/dropboxd &
 # env - LANG="$LANG" /usr/bin/dropbox start
-env - LANG="$LANG" /home/tknv/.dropbox-dist/dropboxd &
+# env - LANG="$LANG" /home/tknv/.dropbox-dist/dropboxd &
 conky -c $HOME/.conky | while read -r; do xsetroot -name "$REPLY"; done &
 # no BATTERY even note book,,,sad...
 # conky -c $HOME/.conky | while read -r; do xsetroot -name "$REPLY"; /home/tknv/Scripts/CHECK-LOW-BATTERY; done &
@@ -49,10 +49,10 @@ conky -c $HOME/.conky | while read -r; do xsetroot -name "$REPLY"; done &
 #fi
 
 # for (nm-applet) and etc
-exec ck-launch-session dbus-launch &
+# exec ck-launch-session dbus-launch &
 
 # start wicd on tray
-wicd-gtk -t &
+# wicd-gtk -t &
 
 # start taskd
 # export TASKDDATA=/var/taskserver
@@ -66,6 +66,9 @@ wicd-gtk -t &
 
 # mpd user
 # mpd /home/tknv/.config/mpd/mpd.conf
+
+# start synaptics pad lock while and after key input 1.2 secs.
+syndaemon -i 1.2 -d
 
 # finaly start dwm
 while true; do
